@@ -1,107 +1,88 @@
 ## Easy
 
-| #    | Title                                    | Tag                                      |
-| :--- | :--------------------------------------- | :--------------------------------------- |
-| 1    | [Two Sum][001]                           | Array, Hash Table                        |
-| 7    | [Reverse Integer][007]                   | Math                                     |
-| 9    | [Palindrome Number][009]                 | Math                                     |
-| 13   | [Roman to Integer][013]                  | Math, String                             |
-| 14   | [Longest Common Prefix][014]             | String                                   |
-| 20   | [Valid Parentheses][020]                 | Stack, String                            |
-| 21   | [Merge Two Sorted Lists][021]            | Linked List                              |
-| 26   | [Remove Duplicates from Sorted Array][026] | Array, Two Pointers                      |
-| 27   | [Remove Element][027]                    | Array, Two Pointers                      |
-| 28   | [Implement strStr()][028]                | Two Pointers, String                     |
-| 35   | [Search Insert Position][035]            | String                                   |
-| 38   | [Count and Say][038]                     | String                                   |
-| 53   | [Maximum Subarray][053]                  | Array, Divide and Conquer, Dynamic Programming |
-| 58   | [Length of Last Word][058]               | String                                   |
-| 66   | [Plus One][066]                          | Array, Math                              |
-| 67   | [Add Binary][067]                        | Math, String                             |
-| 69   | [Sqrt(x)][069]                           | Binary Search, Math                      |
-| 70   | [Climbing Stairs][070]                   | Dynamic Programming                      |
-| 83   | [Remove Duplicates from Sorted List][083] | Linked List                              |
-| 88   | [Merge Sorted Array][088]                | Array, Two Pointers                      |
-| 100  | [Same Tree][100]                         | Tree, Depth-first Search                 |
-| 101  | [Symmetric Tree][101]                    | Tree, Depth-first Search, Breadth-first Search |
-| 104  | [Maximum Depth of Binary Tree][104]      | Tree, Depth-first Search                 |
-| 107  | [Binary Tree Level Order Traversal II][107] | Tree, Breadth-first Search               |
-| 108  | [Convert Sorted Array to Binary Search Tree][108] | Tree, Depth-first Search                 |
-| 110  | [Balanced Binary Tree][110]              | Tree, Depth-first Search                 |
-| 111  | [Minimum Depth of Binary Tree][111]      | Tree, Depth-first Search, Breadth-first Search |
-| 112  | [Path Sum][112]                          | Tree, Depth-first Search                 |
-| 118  | [Pascal's Triangle][118]                 | Array                                    |
-| 119  | [Pascal's Triangle II][119]              | Array                                    |
-| 121  | [Best Time to Buy and Sell Stock][121]   | Array, Dynamic Programmin                |
-| 122  | [Best Time to Buy and Sell Stock II][122] | Array, Greedy                            |
-| 543  | [Diameter of Binary Tree][543]           | Tree                                     |
+| #    | Title                                    | Solutio              |
+| :--- | :--------------------------------------- | :--------------------|
+| 1    | [Two Sum][001]                           | [java][solution-001] |
+| 7    | [Reverse Integer][007]                   | [java][solution-007] |
+| 9    | [Palindrome Number][009]                 | [java][solution-009] |
+| 14   | [Longest Common Prefix][014]             | [java][solution-014] |
+| 20   | [Valid Parentheses][020]                 | [java][solution-020] |
+| 21   | [Merge Two Sorted Lists][021]            | [java][solution-021] |
+| 26   | [Remove Duplicates from Sorted Array][026] | [java][solution-026] |
+| 27   | [Remove Element][027]                    | [java][solution-027] |
+| 28   | [Implement strStr()][028]                | [java][solution-028] |
+| 35   | [Search Insert Position][035]            | [java][solution-035] |
+| 38   | [Count and Say][038]                     | [java][solution-038] |
+| 53   | [Maximum Subarray][053]                  | [java][solution-053] |
+| 58   | [Length of Last Word][058]               | [java][solution-058] |
+| 66   | [Plus One][066]                          | [java][solution-066] |
+| 67   | [Add Binary][067]                        | [java][solution-067] |
+| 69   | [Sqrt(x)][069]                           | [java][solution-069] |
+| 70   | [Climbing Stairs][070]                   | [java][solution-070] |
+| 83   | [Remove Duplicates from Sorted List][083] | [java][solution-083] |
+| 88   | [Merge Sorted Array][088]                | [java][solution-088] |
+| 100  | [Same Tree][100]                         | [java][solution-100] |
+| 101  | [Symmetric Tree][101]                    | [java][solution-101] |
+| 104  | [Maximum Depth of Binary Tree][104]      | [java][solution-104] |
+| 461  | [Hamming Distance][461]                  | [java][solution-461] |
+| 657  | [Hamming Distance][657]                  | [java][solution-657] |
+| 728  | [Hamming Distance][728]                  | [java][solution-728] |
+| 771  | [Hamming Distance][771]                  | [java][solution-771] |
+| 805  | [Hamming Distance][805]                  | [java][solution-805] |
 
 
-[src]: https://github.com/Blankj/awesome-java-leetcode/tree/master/src
-[note]: https://github.com/Blankj/awesome-java-leetcode/tree/master/note
-[companies]: https://github.com/Blankj/awesome-java-leetcode/blob/master/Companies.md
+[001]: https://leetcode.com/problems/two-sum
+[007]: https://leetcode.com/problems/reverse-integer
+[009]: https://leetcode.com/problems/palindrome-number
+[014]: https://leetcode.com/problems/longest-common-prefix
+[020]: https://leetcode.com/problems/valid-parentheses
+[021]: https://leetcode.com/problems/merge-two-sorted-lists
+[026]: https://leetcode.com/problems/remove-duplicates-from-sorted-array
+[027]: https://leetcode.com/problems/remove-element
+[028]: https://leetcode.com/problems/implement-strstr
+[035]: https://leetcode.com/problems/search-insert-position
+[038]: https://leetcode.com/problems/count-and-say
+[053]: https://leetcode.com/problems/maximum-subarray
+[058]: https://leetcode.com/problems/length-of-last-word
+[066]: https://leetcode.com/problems/plus-one
+[067]: https://leetcode.com/problems/add-binary
+[069]: https://leetcode.com/problems/sqrtx
+[070]: https://leetcode.com/problems/climbing-stairs
+[083]: https://leetcode.com/problems/remove-duplicates-from-sorted-list
+[088]: https://leetcode.com/problems/merge-sorted-array
+[100]: https://leetcode.com/problems/same-tree
+[101]: https://leetcode.com/problems/symmetric-tree
+[104]: https://leetcode.com/problems/maximum-depth-of-binary-tree
+[461]: https://leetcode.com/problems/hamming-distance
+[657]: https://leetcode.com/problems/judge-route-circle
+[728]: https://leetcode.com/problems/self-dividing-numbers
+[771]: https://leetcode.com/problems/jewels-and-stones
+[805]: https://leetcode.com/problems/unique-morse-code-words
 
-[001]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/001/README.md
-[007]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/007/README.md
-[009]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/009/README.md
-[013]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/013/README.md
-[014]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/014/README.md
-[020]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/020/README.md
-[021]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/021/README.md
-[026]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/026/README.md
-[027]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/027/README.md
-[028]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/028/README.md
-[035]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/035/README.md
-[038]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/038/README.md
-[053]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/053/README.md
-[058]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/058/README.md
-[066]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/066/README.md
-[067]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/067/README.md
-[069]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/069/README.md
-[070]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/070/README.md
-[083]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/083/README.md
-[088]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/088/README.md
-[100]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/100/README.md
-[101]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/101/README.md
-[104]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/104/README.md
-[107]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/107/README.md
-[108]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/108/README.md
-[110]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/110/README.md
-[111]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/111/README.md
-[112]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/112/README.md
-[118]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/118/README.md
-[119]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/119/README.md
-[121]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/121/README.md
-[122]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/122/README.md
-[543]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/543/README.md
-
-[002]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/002/README.md
-[003]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/003/README.md
-[005]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/005/README.md
-[006]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/006/README.md
-[008]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/008/README.md
-[011]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/011/README.md
-[012]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/012/README.md
-[015]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/015/README.md
-[016]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/016/README.md
-[017]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/017/README.md
-[018]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/018/README.md
-[019]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/019/README.md
-[022]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/022/README.md
-[024]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/024/README.md
-[029]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/029/README.md
-[033]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/033/README.md
-[043]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/043/README.md
-[049]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/049/README.md
-[050]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/050/README.md
-[056]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/056/README.md
-[554]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/554/README.md
-
-[004]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/004/README.md
-[010]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/010/README.md
-[023]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/023/README.md
-[025]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/025/README.md
-[030]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/030/README.md
-[044]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/044/README.md
-[057]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/057/README.md
-[068]: https://github.com/Blankj/awesome-java-leetcode/blob/master/note/068/README.md
+[solution-001]: https://leetcode.com/problems/two-sum
+[solution-007]: https://leetcode.com/problems/reverse-integer
+[solution-009]: https://leetcode.com/problems/palindrome-number
+[solution-014]: https://leetcode.com/problems/longest-common-prefix
+[solution-020]: https://leetcode.com/problems/valid-parentheses
+[solution-021]: https://leetcode.com/problems/merge-two-sorted-lists
+[solution-026]: https://leetcode.com/problems/remove-duplicates-from-sorted-array
+[solution-027]: https://leetcode.com/problems/remove-element
+[solution-028]: https://leetcode.com/problems/implement-strstr
+[solution-035]: https://leetcode.com/problems/search-insert-position
+[solution-038]: https://leetcode.com/problems/count-and-say
+[solution-053]: https://leetcode.com/problems/maximum-subarray
+[solution-058]: https://leetcode.com/problems/length-of-last-word
+[solution-066]: https://leetcode.com/problems/plus-one
+[solution-067]: https://leetcode.com/problems/add-binary
+[solution-069]: https://leetcode.com/problems/sqrtx
+[solution-070]: https://leetcode.com/problems/climbing-stairs
+[solution-083]: https://leetcode.com/problems/remove-duplicates-from-sorted-list
+[solution-088]: https://leetcode.com/problems/merge-sorted-array
+[solution-100]: https://leetcode.com/problems/same-tree
+[solution-101]: https://leetcode.com/problems/symmetric-tree
+[solution-104]: https://leetcode.com/problems/maximum-depth-of-binary-tree
+[solution-461]: https://leetcode.com/problems/hamming-distance
+[solution-657]: https://leetcode.com/problems/judge-route-circle
+[solution-728]: https://leetcode.com/problems/self-dividing-numbers
+[solution-771]: https://leetcode.com/problems/jewels-and-stones
+[solution-805]: https://leetcode.com/problems/unique-morse-code-words
