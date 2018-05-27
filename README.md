@@ -1,6 +1,6 @@
 ## Easy
 
-| #    | Title                                    | Solutio              |
+| #    | Title                                    | Solution             |
 | :--- | :--------------------------------------- | :--------------------|
 | 1    | [Two Sum][001]                           | [java][solution-001] |
 | 7    | [Reverse Integer][007]                   | [java][solution-007] |
@@ -59,30 +59,30 @@
 [771]: https://leetcode.com/problems/jewels-and-stones
 [805]: https://leetcode.com/problems/unique-morse-code-words
 
-[solution-001]: https://leetcode.com/problems/two-sum
-[solution-007]: https://leetcode.com/problems/reverse-integer
-[solution-009]: https://leetcode.com/problems/palindrome-number
-[solution-014]: https://leetcode.com/problems/longest-common-prefix
-[solution-020]: https://leetcode.com/problems/valid-parentheses
-[solution-021]: https://leetcode.com/problems/merge-two-sorted-lists
-[solution-026]: https://leetcode.com/problems/remove-duplicates-from-sorted-array
-[solution-027]: https://leetcode.com/problems/remove-element
-[solution-028]: https://leetcode.com/problems/implement-strstr
-[solution-035]: https://leetcode.com/problems/search-insert-position
-[solution-038]: https://leetcode.com/problems/count-and-say
-[solution-053]: https://leetcode.com/problems/maximum-subarray
-[solution-058]: https://leetcode.com/problems/length-of-last-word
-[solution-066]: https://leetcode.com/problems/plus-one
-[solution-067]: https://leetcode.com/problems/add-binary
-[solution-069]: https://leetcode.com/problems/sqrtx
-[solution-070]: https://leetcode.com/problems/climbing-stairs
-[solution-083]: https://leetcode.com/problems/remove-duplicates-from-sorted-list
-[solution-088]: https://leetcode.com/problems/merge-sorted-array
-[solution-100]: https://leetcode.com/problems/same-tree
-[solution-101]: https://leetcode.com/problems/symmetric-tree
-[solution-104]: https://leetcode.com/problems/maximum-depth-of-binary-tree
-[solution-461]: https://leetcode.com/problems/hamming-distance
-[solution-657]: https://leetcode.com/problems/judge-route-circle
-[solution-728]: https://leetcode.com/problems/self-dividing-numbers
-[solution-771]: https://leetcode.com/problems/jewels-and-stones
-[solution-805]: https://leetcode.com/problems/unique-morse-code-words
+[solution-001]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/001/solution.java
+[solution-007]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/007/solution.java
+[solution-009]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/009/solution.java
+[solution-014]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/014/solution.java
+[solution-020]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/020/solution.java
+[solution-021]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/021/solution.java
+[solution-026]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/026/solution.java
+[solution-027]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/027/solution.java
+[solution-028]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/028/solution.java
+[solution-035]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/035/solution.java
+[solution-038]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/038/solution.java
+[solution-053]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/053/solution.java
+[solution-058]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/058/solution.java
+[solution-066]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/066/solution.java
+[solution-067]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/067/solution.java
+[solution-069]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/069/solution.java
+[solution-070]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/070/solution.java
+[solution-083]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/083/solution.java
+[solution-088]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/088/solution.java
+[solution-100]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/100/solution.java
+[solution-101]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/101/solution.java
+[solution-104]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/104/solution.java
+[solution-461]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/461/solution.java
+[solution-657]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/657/solution.java
+[solution-728]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/728/solution.java
+[solution-771]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/771/solution.java
+[solution-805]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/805/solution.java
