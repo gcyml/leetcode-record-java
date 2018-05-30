@@ -34,7 +34,7 @@
 | 657  | [Hamming Distance][657]                  | [java][solution-657] | String           |
 | 728  | [Hamming Distance][728]                  | [java][solution-728] | Math             |
 | 771  | [Hamming Distance][771]                  | [java][solution-771] | Hash Table       |
-| 805  | [Hamming Distance][805]                  | [java][solution-805] |                  |
+| 804  | [Hamming Distance][804]                  | [java][solution-804] |                  |
 
 
 [001]: https://leetcode.com/problems/two-sum
@@ -61,11 +61,14 @@
 [104]: https://leetcode.com/problems/maximum-depth-of-binary-tree  
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii 
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree   
+[110]: https://leetcode.com/problems/balanced-binary-tree  
 [461]: https://leetcode.com/problems/hamming-distance
+[617]: https://leetcode.com/problems/judge-route-circle
+[637]: https://leetcode.com/problems/average-of-levels-in-binary-tree
 [657]: https://leetcode.com/problems/judge-route-circle
 [728]: https://leetcode.com/problems/self-dividing-numbers
 [771]: https://leetcode.com/problems/jewels-and-stones
-[805]: https://leetcode.com/problems/unique-morse-code-words
+[804]: https://leetcode.com/problems/unique-morse-code-words
 
 [solution-001]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/001/solution.java
 [solution-007]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/007/solution.java
@@ -89,8 +92,28 @@
 [solution-100]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/100/solution.java
 [solution-101]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/101/solution.java
 [solution-104]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/104/solution.java
+[solution-107]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/107/solution.java
+[solution-108]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/108/solution.java
+[solution-110]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/110/solution.java
 [solution-461]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/461/solution.java
+[solution-617]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/617/solution.java
+[solution-637]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/637/solution.java
 [solution-657]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/657/solution.java
 [solution-728]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/728/solution.java
 [solution-771]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/771/solution.java
-[solution-805]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/805/solution.java
+[solution-804]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/804/solution.java
+
+
+
+
+
+## Medium
+
+| #    | Title                                    | Solution             | Tag              |
+| :--- | :--------------------------------------- | :------------------- | :--------------- |
+| 654  | [Maximum Binary Tree][654]               | [java][solution-654] | Tree             |
+
+
+[654]: https://leetcode.com/problems/maximum-binary-tree
+
+[solution-654]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/654/solution.java
