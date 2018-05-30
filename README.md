@@ -27,6 +27,7 @@
 | 107  | [Binary Tree Level Order Traversal II][107] | [java][solution-107] | Tree          |
 | 108  | [Convert Sorted Array to Binary Search Tree][108] | [java][solution-108] | Tree    |
 | 110  | [Balanced Binary Tree][110]              | [java][solution-110] | Tree             |
+| 226  | [Invert Binary Tree][226]              | [java][solution-226] | Tree             |
 | 461  | [Hamming Distance][461]                  | [java][solution-461] |                  |
 | 617  | [Merge Two Binary Trees][617]            | [java][solution-617] | Tree             |
 | 637  | [Average of Levels in Binary Tree][637]  | [java][solution-637] | Tree             |
@@ -62,6 +63,7 @@
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii 
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree   
 [110]: https://leetcode.com/problems/balanced-binary-tree  
+[226]: https://leetcode.com/problems/invert-binary-tree
 [461]: https://leetcode.com/problems/hamming-distance
 [617]: https://leetcode.com/problems/judge-route-circle
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree
@@ -95,6 +97,7 @@
 [solution-107]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/107/solution.java
 [solution-108]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/108/solution.java
 [solution-110]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/110/solution.java
+[solution-226]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/226/solution.java
 [solution-461]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/461/solution.java
 [solution-617]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/617/solution.java
 [solution-637]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/637/solution.java
