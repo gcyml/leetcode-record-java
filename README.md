@@ -1,41 +1,41 @@
 ## Easy
 
-| #    | Title                                    | Solution             | Tag              |
-| :--- | :--------------------------------------- | :------------------- | :--------------- |
-| 1    | [Two Sum][001]                           | [java][solution-001] | Array, Hash Table |
-| 7    | [Reverse Integer][007]                   | [java][solution-007] | Math             |
-| 9    | [Palindrome Number][009]                 | [java][solution-009] | Math             |
-| 14   | [Longest Common Prefix][014]             | [java][solution-014] | String           |
-| 20   | [Valid Parentheses][020]                 | [java][solution-020] | String           |
-| 21   | [Merge Two Sorted Lists][021]            | [java][solution-021] |                  |
-| 26   | [Remove Duplicates from Sorted Array][026] | [java][solution-026] |                |
-| 27   | [Remove Element][027]                    | [java][solution-027] | Array            |
-| 28   | [Implement strStr()][028]                | [java][solution-028] | String           |
-| 35   | [Search Insert Position][035]            | [java][solution-035] | Array            |
-| 38   | [Count and Say][038]                     | [java][solution-038] | String           |
-| 53   | [Maximum Subarray][053]                  | [java][solution-053] |                  |
-| 58   | [Length of Last Word][058]               | [java][solution-058] | Array, Dynamic Programming, String |
-| 66   | [Plus One][066]                          | [java][solution-066] | Array, Math      |
-| 67   | [Add Binary][067]                        | [java][solution-067] | Array, String, Math |
-| 69   | [Sqrt(x)][069]                           | [java][solution-069] | Math             |
-| 70   | [Climbing Stairs][070]                   | [java][solution-070] | Dynamic Programming |
-| 83   | [Remove Duplicates from Sorted List][083] | [java][solution-083] |                 |
-| 88   | [Merge Sorted Array][088]                | [java][solution-088] | Array            |
-| 100  | [Same Tree][100]                         | [java][solution-100] | Tree             |
-| 101  | [Symmetric Tree][101]                    | [java][solution-101] | Tree             |
-| 104  | [Maximum Depth of Binary][104]           | [java][solution-104] | Tree             |
-| 107  | [Binary Tree Level Order Traversal II][107] | [java][solution-107] | Tree          |
-| 108  | [Convert Sorted Array to Binary Search Tree][108] | [java][solution-108] | Tree    |
-| 110  | [Balanced Binary Tree][110]              | [java][solution-110] | Tree             |
-| 226  | [Invert Binary Tree][226]              | [java][solution-226] | Tree             |
-| 461  | [Hamming Distance][461]                  | [java][solution-461] |                  |
-| 617  | [Merge Two Binary Trees][617]            | [java][solution-617] | Tree             |
-| 637  | [Average of Levels in Binary Tree][637]  | [java][solution-637] | Tree             |
-| 654  | [Maximum Binary Tree][654]               | [java][solution-654] | Tree             |
-| 657  | [Hamming Distance][657]                  | [java][solution-657] | String           |
-| 728  | [Hamming Distance][728]                  | [java][solution-728] | Math             |
-| 771  | [Hamming Distance][771]                  | [java][solution-771] | Hash Table       |
-| 804  | [Hamming Distance][804]                  | [java][solution-804] |                  |
+| #    | Title                                    | Solution             | Tag              | runtime |
+| :--- | :--------------------------------------- | :------------------- | :--------------- | :------ |
+| 1    | [Two Sum][001]                           | [java][solution-001] | Array, Hash Table | upper  |
+| 7    | [Reverse Integer][007]                   | [java][solution-007] | Math             | lower  |
+| 9    | [Palindrome Number][009]                 | [java][solution-009] | Math             | lower  |
+| 14   | [Longest Common Prefix][014]             | [java][solution-014] | String           | lower  |
+| 20   | [Valid Parentheses][020]                 | [java][solution-020] | String           | lower  |
+| 21   | [Merge Two Sorted Lists][021]            | [java][solution-021] |                  | medium |
+| 26   | [Remove Duplicates from Sorted Array][026] | [java][solution-026] |                | lower  |
+| 27   | [Remove Element][027]                    | [java][solution-027] | Array            | medium |
+| 28   | [Implement strStr()][028]                | [java][solution-028] | String           | lower  |
+| 35   | [Search Insert Position][035]            | [java][solution-035] | Array            | upper  |
+| 38   | [Count and Say][038]                     | [java][solution-038] | String           | medium |
+| 53   | [Maximum Subarray][053]                  | [java][solution-053] |                  | lower  |
+| 58   | [Length of Last Word][058]               | [java][solution-058] | Array, Dynamic Programming, String | lower  |
+| 66   | [Plus One][066]                          | [java][solution-066] | Array, Math      | upper  |
+| 67   | [Add Binary][067]                        | [java][solution-067] | Array, String, Math | medium |
+| 69   | [Sqrt(x)][069]                           | [java][solution-069] | Math             | medium |
+| 70   | [Climbing Stairs][070]                   | [java][solution-070] | Dynamic Programming | upper  |
+| 83   | [Remove Duplicates from Sorted List][083] | [java][solution-083] |                 | lower  |
+| 88   | [Merge Sorted Array][088]                | [java][solution-088] | Array            | upper  |
+| 100  | [Same Tree][100]                         | [java][solution-100] | Tree             | upper  |
+| 101  | [Symmetric Tree][101]                    | [java][solution-101] | Tree             | medium |
+| 104  | [Maximum Depth of Binary][104]           | [java][solution-104] | Tree             | medium |
+| 107  | [Binary Tree Level Order Traversal II][107] | [java][solution-107] | Tree          | upper  |
+| 108  | [Convert Sorted Array to Binary Search Tree][108] | [java][solution-108] | Tree    | upper  |
+| 110  | [Balanced Binary Tree][110]              | [java][solution-110] | Tree             | medium |
+| 226  | [Invert Binary Tree][226]                | [java][solution-226] | Tree             | upper  |
+| 461  | [Hamming Distance][461]                  | [java][solution-461] |                  | lower  |
+| 617  | [Merge Two Binary Trees][617]            | [java][solution-617] | Tree             | upper  |
+| 637  | [Average of Levels in Binary Tree][637]  | [java][solution-637] | Tree             | lower  |
+| 653  | [Two Sum IV - Input is a BST][653]       | [java][solution-653] | Tree             | upper  |
+| 657  | [Judge Route Circle][657]                | [java][solution-657] | String           | upper  |
+| 728  | [Self Dividing Numbers][728]             | [java][solution-728] | Math             | upper  |
+| 771  | [Jewels and Stones][771]                 | [java][solution-771] | Hash Table       | medium |
+| 804  | [Unique Morse Code Words][804]           | [java][solution-804] |                  | lower  |
 
 
 [001]: https://leetcode.com/problems/two-sum
@@ -67,6 +67,7 @@
 [461]: https://leetcode.com/problems/hamming-distance
 [617]: https://leetcode.com/problems/judge-route-circle
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree
+[653]: https://leetcode.com/problems/two-sum-iv-input-is-a-bst
 [657]: https://leetcode.com/problems/judge-route-circle
 [728]: https://leetcode.com/problems/self-dividing-numbers
 [771]: https://leetcode.com/problems/jewels-and-stones
@@ -101,6 +102,7 @@
 [solution-461]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/461/solution.java
 [solution-617]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/617/solution.java
 [solution-637]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/637/solution.java
+[solution-653]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/653/solution.java
 [solution-657]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/657/solution.java
 [solution-728]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/728/solution.java
 [solution-771]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/771/solution.java
