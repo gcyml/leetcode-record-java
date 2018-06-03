@@ -30,12 +30,10 @@ class Solution {
             }
             if(curIndex == 0) {
                 curIndex = nextIndex;
-
                 result.add(sum/nodeSum);
                 nodeSum = nextIndex;
                 nextIndex = 0;
-                sum = 0;
-                
+                sum = 0; 
             }
 
             

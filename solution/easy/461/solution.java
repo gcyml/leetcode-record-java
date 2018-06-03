@@ -1,4 +1,4 @@
-ass Solution {
+class Solution {
     public int hammingDistance(int x, int y) {
         int r =0;
         int t = x ^ y;

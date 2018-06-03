@@ -10,16 +10,16 @@
 | 21   | [Merge Two Sorted Lists][021]            | [java][solution-021] |                  | medium |
 | 26   | [Remove Duplicates from Sorted Array][026] | [java][solution-026] |                | upper  |
 | 27   | [Remove Element][027]                    | [java][solution-027] | Array            | medium |
-| 28   | [** Implement strStr() **][028]                | [java][solution-028] | String           | upper  |
+| 28   | [Implement strStr()][028]                | [java][solution-028] | String           | upper  |
 | 35   | [Search Insert Position][035]            | [java][solution-035] | Array            | upper  |
 | 38   | [Count and Say][038]                     | [java][solution-038] | String           | medium |
-| 53   | [** Maximum Subarray **][053]                  | [java][solution-053] |                  | upper  |
-| 58   | [Length of Last Word][058]               | [java][solution-058] | Array, Dynamic Programming, String | lower  |
+| 53   | [Maximum Subarray][053]                  | [java][solution-053] |                  | upper  |
+| 58   | [Length of Last Word][058]               | [java][solution-058] | Array, Dynamic Programming, String | upper  |
 | 66   | [Plus One][066]                          | [java][solution-066] | Array, Math      | upper  |
 | 67   | [Add Binary][067]                        | [java][solution-067] | Array, String, Math | medium |
 | 69   | [Sqrt(x)][069]                           | [java][solution-069] | Math             | medium |
 | 70   | [Climbing Stairs][070]                   | [java][solution-070] | Dynamic Programming | upper  |
-| 83   | [Remove Duplicates from Sorted List][083] | [java][solution-083] |                 | lower  |
+| 83   | [Remove Duplicates from Sorted List][083] | [java][solution-083] |                 | upper  |
 | 88   | [Merge Sorted Array][088]                | [java][solution-088] | Array            | upper  |
 | 100  | [Same Tree][100]                         | [java][solution-100] | Tree             | upper  |
 | 101  | [Symmetric Tree][101]                    | [java][solution-101] | Tree             | medium |
@@ -28,14 +28,14 @@
 | 108  | [Convert Sorted Array to Binary Search Tree][108] | [java][solution-108] | Tree    | upper  |
 | 110  | [Balanced Binary Tree][110]              | [java][solution-110] | Tree             | medium |
 | 226  | [Invert Binary Tree][226]                | [java][solution-226] | Tree             | upper  |
-| 461  | [Hamming Distance][461]                  | [java][solution-461] |                  | lower  |
+| 461  | [Hamming Distance][461]                  | [java][solution-461] |                  | upper  |
 | 617  | [Merge Two Binary Trees][617]            | [java][solution-617] | Tree             | upper  |
-| 637  | [Average of Levels in Binary Tree][637]  | [java][solution-637] | Tree             | lower  |
+| 637  | [Average of Levels in Binary Tree][637]  | [java][solution-637] | Tree             | medium |
 | 653  | [Two Sum IV - Input is a BST][653]       | [java][solution-653] | Tree             | upper  |
 | 657  | [Judge Route Circle][657]                | [java][solution-657] | String           | upper  |
 | 728  | [Self Dividing Numbers][728]             | [java][solution-728] | Math             | upper  |
 | 771  | [Jewels and Stones][771]                 | [java][solution-771] | Hash Table       | medium |
-| 804  | [Unique Morse Code Words][804]           | [java][solution-804] |                  | lower  |
+| 804  | [Unique Morse Code Words][804]           | [java][solution-804] |                  | upper  |
 
 
 [001]: https://leetcode.com/problems/two-sum
