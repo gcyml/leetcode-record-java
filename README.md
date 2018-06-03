@@ -3,17 +3,17 @@
 | #    | Title                                    | Solution             | Tag              | runtime |
 | :--- | :--------------------------------------- | :------------------- | :--------------- | :------ |
 | 1    | [Two Sum][001]                           | [java][solution-001] | Array, Hash Table | upper  |
-| 7    | [Reverse Integer][007]                   | [java][solution-007] | Math             | lower  |
-| 9    | [Palindrome Number][009]                 | [java][solution-009] | Math             | lower  |
-| 14   | [Longest Common Prefix][014]             | [java][solution-014] | String           | lower  |
-| 20   | [Valid Parentheses][020]                 | [java][solution-020] | String           | lower  |
+| 7    | [Reverse Integer][007]                   | [java][solution-007] | Math             | medium |
+| 9    | [Palindrome Number][009]                 | [java][solution-009] | Math             | upper  |
+| 14   | [Longest Common Prefix][014]             | [java][solution-014] | String           | medium |
+| 20   | [Valid Parentheses][020]                 | [java][solution-020] | String           | medium |
 | 21   | [Merge Two Sorted Lists][021]            | [java][solution-021] |                  | medium |
-| 26   | [Remove Duplicates from Sorted Array][026] | [java][solution-026] |                | lower  |
+| 26   | [Remove Duplicates from Sorted Array][026] | [java][solution-026] |                | upper  |
 | 27   | [Remove Element][027]                    | [java][solution-027] | Array            | medium |
-| 28   | [Implement strStr()][028]                | [java][solution-028] | String           | lower  |
+| 28   | [** Implement strStr() **][028]                | [java][solution-028] | String           | upper  |
 | 35   | [Search Insert Position][035]            | [java][solution-035] | Array            | upper  |
 | 38   | [Count and Say][038]                     | [java][solution-038] | String           | medium |
-| 53   | [Maximum Subarray][053]                  | [java][solution-053] |                  | lower  |
+| 53   | [** Maximum Subarray **][053]                  | [java][solution-053] |                  | upper  |
 | 58   | [Length of Last Word][058]               | [java][solution-058] | Array, Dynamic Programming, String | lower  |
 | 66   | [Plus One][066]                          | [java][solution-066] | Array, Math      | upper  |
 | 67   | [Add Binary][067]                        | [java][solution-067] | Array, String, Math | medium |
