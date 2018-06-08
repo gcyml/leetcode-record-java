@@ -135,4 +135,4 @@
 [solution-515]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/515/solution.java
 [solution-654]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/654/solution.java
 [solution-655]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/655/solution.java
-[solution-818]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/818/solution.java
+[solution-814]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/818/solution.java
