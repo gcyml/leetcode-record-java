@@ -116,7 +116,7 @@
 
 | #    | Title                                    | Solution             | Tag              | runtime |
 | :--- | :--------------------------------------- | :------------------- | :--------------- | :------ |
-| 094  | [Binary Tree Inorder Traversal][094]     | [java][solution-094] | Tree             | upper   |
+| 094  | [Binary Tree Inorder Traversal][094]     | [java][solution-094] | Tree, Hash Table, Stack | upper   |
 | 513  | [Find Bottom Left Tree Value][513]       | [java][solution-513] | Tree             | upper   |
 | 515  | [Find Largest Value in Each Tree Row][515] | [java][solution-515] | Tree             | upper   |
 | 654  | [Maximum Binary Tree][654]               | [java][solution-654] | Tree             | upper   |
@@ -130,7 +130,6 @@
 [655]: https://leetcode.com/problems/print-binary-tree
 [818]: https://leetcode.com/problems/binary-tree-pruning
 
-<<<<<<< HEAD
 [solution-094]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/094/solution.java
 [solution-513]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/513/solution.java
 [solution-515]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/515/solution.java
