@@ -128,7 +128,7 @@
 [515]: https://leetcode.com/problems/find-largest-value-in-each-tree-row
 [654]: https://leetcode.com/problems/maximum-binary-tree
 [655]: https://leetcode.com/problems/print-binary-tree
-[818]: https://leetcode.com/problems/binary-tree-pruning
+[814]: https://leetcode.com/problems/binary-tree-pruning
 
 [solution-094]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/094/solution.java
 [solution-513]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/513/solution.java
