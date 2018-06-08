@@ -21,11 +21,11 @@
 | 70   | [Climbing Stairs][070]                   | [java][solution-070] | Dynamic Programming | upper  |
 | 83   | [Remove Duplicates from Sorted List][083] | [java][solution-083] |                 | lower  |
 | 88   | [Merge Sorted Array][088]                | [java][solution-088] | Array            | upper  |
-| 100  | [Same Tree][100]                         | [java][solution-100] | Tree             | upper  |
-| 101  | [Symmetric Tree][101]                    | [java][solution-101] | Tree             | medium |
-| 104  | [Maximum Depth of Binary][104]           | [java][solution-104] | Tree             | medium |
-| 107  | [Binary Tree Level Order Traversal II][107] | [java][solution-107] | Tree          | upper  |
-| 108  | [Convert Sorted Array to Binary Search Tree][108] | [java][solution-108] | Tree    | upper  |
+| 100  | [Same Tree][100]                         | [java][solution-100] | Tree, Depth-first Search | upper  |
+| 101  | [Symmetric Tree][101]                    | [java][solution-101] | Tree, Depth-first Search | medium |
+| 104  | [Maximum Depth of Binary][104]           | [java][solution-104] | Tree, Depth-first Search | medium |
+| 107  | [Binary Tree Level Order Traversal II][107] | [java][solution-107] | Tree, Breadth-first Search | upper  |
+| 108  | [Convert Sorted Array to Binary Search Tree][108] | [java][solution-108] | Tree, Depth-first Search  | upper  |
 | 110  | [Balanced Binary Tree][110]              | [java][solution-110] | Tree             | medium |
 | 226  | [Invert Binary Tree][226]                | [java][solution-226] | Tree             | upper  |
 | 461  | [Hamming Distance][461]                  | [java][solution-461] |                  | lower  |
@@ -114,11 +114,25 @@
 
 ## Medium
 
-| #    | Title                                    | Solution             | Tag              |
-| :--- | :--------------------------------------- | :------------------- | :--------------- |
-| 654  | [Maximum Binary Tree][654]               | [java][solution-654] | Tree             |
+| #    | Title                                    | Solution             | Tag              | runtime |
+| :--- | :--------------------------------------- | :------------------- | :--------------- | :------ |
+| 094  | [Binary Tree Inorder Traversal][094]     | [java][solution-094] | Tree             | upper   |
+| 513  | [Find Bottom Left Tree Value][513]       | [java][solution-513] | Tree             | upper   |
+| 515  | [Find Largest Value in Each Tree Row][515] | [java][solution-515] | Tree             | upper   |
+| 654  | [Maximum Binary Tree][654]               | [java][solution-654] | Tree             | upper   |
+| 655  | [Print Binary Tree][655]                 | [java][solution-655] | Tree             | upper   |
+| 814  | [Binary Tree Pruning][814]               | [java][solution-814] | Tree             | upper   |
 
-
+[094]: https://leetcode.com/problems/binary-tree-inorder-traversal
+[513]: https://leetcode.com/problems/find-bottom-left-tree-value
+[515]: https://leetcode.com/problems/find-largest-value-in-each-tree-row
 [654]: https://leetcode.com/problems/maximum-binary-tree
+[655]: https://leetcode.com/problems/print-binary-tree
+[818]: https://leetcode.com/problems/binary-tree-pruning
 
+[solution-094]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/094/solution.java
+[solution-513]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/513/solution.java
+[solution-515]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/515/solution.java
 [solution-654]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/654/solution.java
+[solution-655]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/655/solution.java
+[solution-818]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/818/solution.java
