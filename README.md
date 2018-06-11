@@ -28,7 +28,9 @@
 | 108  | [Convert Sorted Array to Binary Search Tree][108] | [java][solution-108] | Tree, Depth-first Search  | upper  |
 | 110  | [Balanced Binary Tree][110]              | [java][solution-110] | Tree             | medium |
 | 226  | [Invert Binary Tree][226]                | [java][solution-226] | Tree             | upper  |
+| 283  | [Move Zeroes][283]                       | [java][solution-283] |                  | upper  |
 | 461  | [Hamming Distance][461]                  | [java][solution-461] |                  | upper  |
+| 485  | [Max Consecutive Ones][485]              | [java][solution-485] |                  | upper  |
 | 617  | [Merge Two Binary Trees][617]            | [java][solution-617] | Tree             | upper  |
 | 637  | [Average of Levels in Binary Tree][637]  | [java][solution-637] | Tree             | medium |
 | 653  | [Two Sum IV - Input is a BST][653]       | [java][solution-653] | Tree             | upper  |
@@ -36,7 +38,7 @@
 | 728  | [Self Dividing Numbers][728]             | [java][solution-728] | Math             | upper  |
 | 771  | [Jewels and Stones][771]                 | [java][solution-771] | Hash Table       | medium |
 | 804  | [Unique Morse Code Words][804]           | [java][solution-804] |                  | upper  |
-
+| 832  | [Flipping an Image][832]                 | [java][solution-832] |                  | upper  |
 
 [001]: https://leetcode.com/problems/two-sum
 [007]: https://leetcode.com/problems/reverse-integer
@@ -64,7 +66,9 @@
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree   
 [110]: https://leetcode.com/problems/balanced-binary-tree  
 [226]: https://leetcode.com/problems/invert-binary-tree
+[283]: https://leetcode.com/problems/move-zeroes
 [461]: https://leetcode.com/problems/hamming-distance
+[485]: https://leetcode.com/problems/max-consecutive-ones
 [617]: https://leetcode.com/problems/judge-route-circle
 [637]: https://leetcode.com/problems/average-of-levels-in-binary-tree
 [653]: https://leetcode.com/problems/two-sum-iv-input-is-a-bst
@@ -72,6 +76,7 @@
 [728]: https://leetcode.com/problems/self-dividing-numbers
 [771]: https://leetcode.com/problems/jewels-and-stones
 [804]: https://leetcode.com/problems/unique-morse-code-words
+[832]: https://leetcode.com/problems/flipping-an-image
 
 [solution-001]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/001/solution.java
 [solution-007]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/007/solution.java
@@ -100,6 +105,7 @@
 [solution-110]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/110/solution.java
 [solution-226]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/226/solution.java
 [solution-461]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/461/solution.java
+[solution-485]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/485/solution.java
 [solution-617]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/617/solution.java
 [solution-637]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/637/solution.java
 [solution-653]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/653/solution.java
@@ -107,6 +113,7 @@
 [solution-728]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/728/solution.java
 [solution-771]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/771/solution.java
 [solution-804]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/804/solution.java
+[solution-832]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/832/solution.java
 
 
 
