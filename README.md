@@ -108,6 +108,7 @@
 [solution-108]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/108/solution.java
 [solution-110]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/110/solution.java
 [solution-226]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/226/solution.java
+[solution-283]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/283/solution.java
 [solution-448]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/448/solution.java
 [solution-461]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/461/solution.java
 [solution-485]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/485/solution.java
