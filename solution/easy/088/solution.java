@@ -1,4 +1,4 @@
-ass Solution {
+class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int count = m + n - 1;
         --m; --n;

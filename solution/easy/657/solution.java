@@ -1,4 +1,4 @@
-ass Solution {
+class Solution {
     public boolean judgeCircle(String moves) {
         char[] steps = moves.toCharArray();
         int x = 0;

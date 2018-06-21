@@ -1,4 +1,4 @@
-ass Solution {
+class Solution {
     public String addBinary(String a, String b) {
         String result ="";
         int la = a.length();

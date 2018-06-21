@@ -1,4 +1,4 @@
-ass Solution {
+class Solution {
     public int mySqrt(int x) {
         // 如果初始值取0x5f37642f，则会进一步加快计算速度
         double x1 = x/2.0;

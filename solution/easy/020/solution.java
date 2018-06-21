@@ -1,4 +1,4 @@
-ass Solution {
+class Solution {
     public boolean isValid(String s) {
         Stack<String> stack = new Stack<String>();  
         for(int i=0;i<s.length();i++){  

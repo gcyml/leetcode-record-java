@@ -1,4 +1,4 @@
-ass Solution {
+class Solution {
     public String countAndSay(int n) {
         StringBuilder sb = new StringBuilder();
         if(n==1) {

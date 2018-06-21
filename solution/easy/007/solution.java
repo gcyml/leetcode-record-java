@@ -1,4 +1,4 @@
-ass Solution {
+class Solution {
     public int reverse(int x) {
         long tmp = x;
         // 防止结果溢出

@@ -1,4 +1,4 @@
-ass Solution {
+class Solution {
     public int[] plusOne(int[] digits) {
         int[] result = new int[digits.length+1];  
  
