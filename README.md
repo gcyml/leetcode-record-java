@@ -137,8 +137,8 @@
 | 513  | [Find Bottom Left Tree Value][513]       | [java][solution-513] | Tree             | upper   |
 | 515  | [Find Largest Value in Each Tree Row][515] | [java][solution-515] | Tree           | upper   |
 | 654  | [Maximum Binary Tree][654]               | [java][solution-654] | Tree             | upper   |
-| 667  | [Beautiful Arrangement II][667]          | [java][solution-667] | Tree             | upper   |
 | 655  | [Print Binary Tree][655]                 | [java][solution-655] | Tree             | upper   |
+| 667  | [Beautiful Arrangement II][667]          | [java][solution-667] | Tree             | upper   |
 | 769  | [Max Chunks To Make Sorted][769]         | [java][solution-769] | Tree             | upper   |
 | 814  | [Binary Tree Pruning][814]               | [java][solution-814] | Tree             | upper   |
 
@@ -150,6 +150,7 @@
 [515]: https://leetcode.com/problems/find-largest-value-in-each-tree-row
 [654]: https://leetcode.com/problems/maximum-binary-tree
 [655]: https://leetcode.com/problems/print-binary-tree
+[667]: https://leetcode.com/problems/beautiful-arrangement-ii
 [769]: https://leetcode.com/problems/max-chunks-to-make-sorted
 [814]: https://leetcode.com/problems/binary-tree-pruning
 
@@ -161,5 +162,6 @@
 [solution-515]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/515/solution.java
 [solution-654]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/654/solution.java
 [solution-655]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/655/solution.java
+[solution-667]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/667/solution.java
 [solution-769]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/769/solution.java
 [solution-814]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/medium/818/solution.java
