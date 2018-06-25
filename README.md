@@ -27,8 +27,11 @@
 | 107  | [Binary Tree Level Order Traversal II][107] | [java][solution-107] | Tree, Breadth-first Search | upper  |
 | 108  | [Convert Sorted Array to Binary Search Tree][108] | [java][solution-108] | Tree, Depth-first Search  | upper  |
 | 110  | [Balanced Binary Tree][110]              | [java][solution-110] | Tree             | medium |
+| 121  | [Best Time to Buy and Sell Stock][121]   | [java][solution-121] | Tree             | lower  |
+| 198  | [House Robber][198]                      | [java][solution-198] | Dynamic Programming | lower |
 | 226  | [Invert Binary Tree][226]                | [java][solution-226] | Tree             | upper  |
 | 283  | [Move Zeroes][283]                       | [java][solution-283] | Array            | upper  |
+| 303  | [Range Sum Query - Immutable][303]       | [java][solution-303] | Dynamic Programming | lower |
 | 461  | [Hamming Distance][461]                  | [java][solution-461] |                  | upper  |
 | 448  | [Find All Numbers Disappeared in an Array][283] | [java][solution-448] |           | upper  |
 | 485  | [Max Consecutive Ones][485]              | [java][solution-485] | Array            | upper  |
@@ -38,6 +41,7 @@
 | 657  | [Judge Route Circle][657]                | [java][solution-657] | String           | upper  |
 | 717  | [1-bit and 2-bit Characters][717]        | [java][solution-717] | Array            | upper  |
 | 728  | [Self Dividing Numbers][728]             | [java][solution-728] | Math             | upper  |
+| 746  | [Min Cost Climbing Stairs][746]          | [java][solution-746] | Dynamic Programming | medium |
 | 771  | [Jewels and Stones][771]                 | [java][solution-771] | Hash Table       | medium |
 | 804  | [Unique Morse Code Words][804]           | [java][solution-804] |                  | upper  |
 | 832  | [Flipping an Image][832]                 | [java][solution-832] | Array            | upper  |
@@ -67,8 +71,11 @@
 [107]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii 
 [108]: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree   
 [110]: https://leetcode.com/problems/balanced-binary-tree  
+[121]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock  
+[198]: https://leetcode.com/problems/house-robber
 [226]: https://leetcode.com/problems/invert-binary-tree
 [283]: https://leetcode.com/problems/move-zeroes
+[303]: https://leetcode.com/problems/range-sum-query-immutable
 [461]: https://leetcode.com/problems/hamming-distance
 [448]: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array
 [485]: https://leetcode.com/problems/max-consecutive-ones
@@ -78,6 +85,7 @@
 [657]: https://leetcode.com/problems/judge-route-circle
 [717]: https://leetcode.com/problems/1-bit-and-2-bit-characters
 [728]: https://leetcode.com/problems/self-dividing-numbers
+[746]: https://leetcode.com/problems/min-cost-climbing-stairs
 [771]: https://leetcode.com/problems/jewels-and-stones
 [804]: https://leetcode.com/problems/unique-morse-code-words
 [832]: https://leetcode.com/problems/flipping-an-image
@@ -107,8 +115,11 @@
 [solution-107]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/107/solution.java
 [solution-108]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/108/solution.java
 [solution-110]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/110/solution.java
+[solution-121]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/121/solution.java
+[solution-198]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/198/solution.java
 [solution-226]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/226/solution.java
 [solution-283]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/283/solution.java
+[solution-303]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/303/solution.java
 [solution-448]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/448/solution.java
 [solution-461]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/461/solution.java
 [solution-485]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/485/solution.java
@@ -118,6 +129,7 @@
 [solution-657]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/657/solution.java
 [solution-717]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/717/solution.java
 [solution-728]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/728/solution.java
+[solution-746]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/746/solution.java
 [solution-771]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/771/solution.java
 [solution-804]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/804/solution.java
 [solution-832]: https://github.com/gcyml/leetcode-record-java/blob/master/solution/easy/832/solution.java
