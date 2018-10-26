@@ -16,6 +16,7 @@ return [0, 1].
 ```
 
 **Tags:** Array, Hash Table
+
 **Difficulty:** Easy
 
 ## 思路 0
