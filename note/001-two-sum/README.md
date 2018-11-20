@@ -21,7 +21,8 @@ return [0, 1].
 
 ## 思路
 
-题意是让你从给定的数组中找到两个元素的和为指定值的两个索引，用dp数组存入 ` target - nums[i] `,然后遍历索引为 `0 <= j < i` 的元素 `nums[j`， 若 `nums[j] == dp[i]`, 则返回 `i` 和 `j`。 
+题意是让你从给定的数组中找到两个元素的和为指定值的两个索引，用dp数组存入 ` target - nums[i] `,然后遍历索引为 `0 <= j < i` 的元素 `nums[j`， 若 `nums[j] == dp[i]`, 则返回 `i` 和 `j`。
+
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -38,7 +39,7 @@ class Solution {
                 }
             }
             dp[i] = target - nums[i];
-            
+
         }
         return res;
     }

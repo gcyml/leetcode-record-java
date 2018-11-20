@@ -28,51 +28,31 @@ class Solution {
     public int maxSubArray(int[] nums) {
         int len = nums.length, dp = nums[0], max = dp;
         for (int i = 1; i < len; ++i) {
-            dp = nums[i] + (dp > 0 ? dp : 0);
-            if (dp > max) max = dp;
+            dp = nums[i] + Math.max(dp, 0);
+            max = Math.max(max, dp);
         }
         return max;
     }
 }
 ```
 
-## 思路 1
-
-题目也给了我们另一种思路，就是分治，所谓分治就是把问题分割成更小的，最后再合并即可，我们把 `nums` 一分为二先，那么就有两种情况，一种最大序列包括中间的值，一种就是不包括，也就是在左边或者右边；当最大序列在中间的时候那我们就把它两侧的最大和算出即可；当在两侧的话就继续分治即可。
+上述代码也可简化为下面的例子。只创建 `sum` 和 `max` 两个变量，若 `sum + nums[i]` 小于 `nums[i]`, 则 `sum` 并不是最大和，从索引 `i` 重新开始记和。
 
 ```java
 class Solution {
     public int maxSubArray(int[] nums) {
-        return helper(nums, 0, nums.length - 1);
-    }
-
-    private int helper(int[] nums, int left, int right) {
-        if (left >= right) return nums[left];
-        int mid = (left + right) >> 1;
-        int leftAns = helper(nums, left, mid);
-        int rightAns = helper(nums, mid + 1, right);
-        int leftMax = nums[mid], rightMax = nums[mid + 1];
-        int temp = 0;
-        for (int i = mid; i >= left; --i) {
-            temp += nums[i];
-            if (temp > leftMax) leftMax = temp;
+        int sum = nums[0];
+        int max = nums[0];
+        for(int i = 1; i < nums.length; i++) {
+            sum = Math.max(nums[i], sum + nums[i]);
+            max = Math.max(max, sum);    // choose the larger max.  
         }
-        temp = 0;
-        for (int i = mid + 1; i <= right; ++i) {
-            temp += nums[i];
-            if (temp > rightMax) rightMax = temp;
-        }
-        return Math.max(Math.max(leftAns, rightAns), leftMax + rightMax);
+        return max;
     }
 }
 ```
 
 
-## 结语
-
-如果你同我一样热爱数据结构、算法、LeetCode，可以关注我 GitHub 上的 LeetCode 题解：[awesome-java-leetcode][ajl]
-
 
 
 [title]: https://leetcode.com/problems/maximum-subarray
-[ajl]: https://github.com/Blankj/awesome-java-leetcode
