@@ -47,7 +47,9 @@ class Solution {
     public int maxProfit(int[] prices) {
         int max = 0;
         for (int i = 1; i < prices.length; ++i) {
-            if (prices[i] > prices[i - 1]) max += prices[i] - prices[i - 1];
+            if (prices[i] > prices[i - 1]) {
+              max += prices[i] - prices[i - 1];
+            }
         }
         return max;
     }
@@ -55,11 +57,6 @@ class Solution {
 ```
 
 
-## 结语
-
-如果你同我一样热爱数据结构、算法、LeetCode，可以关注我 GitHub 上的 LeetCode 题解：[awesome-java-leetcode][ajl]
-
 
 
 [title]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii
-[ajl]: https://github.com/Blankj/awesome-java-leetcode

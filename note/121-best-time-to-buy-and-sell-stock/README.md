@@ -27,31 +27,28 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 **Tags:** Array, Dynamic Programmin
 
+**Difficulty:** Easy
 
 ## 思路
 
-题意是给出一个数组代表每天的股票金额，让你在最多买卖一次的情况下算出最大的收益额，最简单的就是模拟即可，每次记录当前值减去最小值的差值，与上一次的进行比较然后更新最大值即可。
+题意是给出一个数组代表每天的股票金额，让你在最多买卖一次的情况下算出最大的收益额。类似这种最优问题，直接动态规划即可。
 
 ```java
 class Solution {
     public int maxProfit(int[] prices) {
-        int max = 0, minPrice = Integer.MAX_VALUE;
-        for (int i = 0; i < prices.length; ++i) {
-            if (prices[i] < minPrice) minPrice = prices[i];
-            int delta = prices[i] - minPrice;
-            if (delta > max) max = delta;
+        if(prices == null || prices.length==0) return 0;
+        int res = 0;
+        int minPrice = prices[0];
+        for(int i = 1; i < prices.length; i++){
+            minPrice = Math.min(minPrice, prices[i]);
+            res = Math.max(res, prices[i] - minPrice);
         }
-        return max;
+        return res;
     }
 }
 ```
 
 
-## 结语
-
-如果你同我一样热爱数据结构、算法、LeetCode，可以关注我 GitHub 上的 LeetCode 题解：[awesome-java-leetcode][ajl]
-
 
 
 [title]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock
-[ajl]: https://github.com/Blankj/awesome-java-leetcode

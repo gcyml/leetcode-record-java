@@ -26,6 +26,7 @@ Explanation: The array represents the integer 4321.
 
 **Tags:** Array, Math
 
+**Difficulty:** Easy
 
 ## 思路
 
