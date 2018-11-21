@@ -16,10 +16,12 @@ The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
 
 **Note:** 
 
-1. 1 <= A.length <= 5000
-2. 0 <= A[i] <= 5000You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
+1. `1 <= A.length <= 5000`
+2. `0 <= A[i] <= 5000`
 
 **Tags:** Array
+
+**Difficulty:** Easy
 
 
 ## 思路

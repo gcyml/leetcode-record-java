@@ -18,6 +18,7 @@ If you have figured out the O(*n*) solution, try coding another solution using t
 
 **Tags:** Array, Divide and Conquer, Dynamic Programming
 
+**Difficulty:** Easy
 
 ## 思路 0
 
