@@ -25,6 +25,27 @@ Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 
 ## 思路
 
+``` java
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        int [] res = new int[2];
+        int[] dp = new int[numbers.length];
+        for(int i=0;i<numbers.length;i++) {
+            for(int j = i-1;j>=0;j--) {
+                if(dp[j] == numbers[i]) {
+                    res[0] = j+1;
+                    res[1] = i+1;
+                    return res;
+                }
+            }
+            dp[i] = target - numbers[i];
+
+        }
+        return res;
+
+    }
+}
+```
 
 
 [title]: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted

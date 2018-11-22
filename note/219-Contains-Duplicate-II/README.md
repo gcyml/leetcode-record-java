@@ -31,6 +31,21 @@ Output: false
 
 ## 思路
 
+``` java
+class Solution {
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        for(int i = 0;i< nums.length-1;i++) {
+            int end = i+k;
+            for(int j = i+1; j < nums.length && j<=end;j++) {
+                if(nums[i] == nums[j]) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
+```
 
 
 [title]: https://leetcode.com/problems/contains-duplicate-ii

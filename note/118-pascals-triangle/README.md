@@ -1,4 +1,4 @@
-# [Pascal's Triangle][title]
+# [Two Sum II - Input array is sorted][title]
 
 ## Description
 
@@ -52,4 +52,4 @@ class Solution {
 ```
 
 
-[title]: https://leetcode.com/problems/pascals-triangle
+[title]: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted
