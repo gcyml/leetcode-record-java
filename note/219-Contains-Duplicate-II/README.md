@@ -30,16 +30,16 @@ Output: false
 **Difficulty:** Easy
 
 ## 思路
-
+题意是在数组相邻k个元素内，是否存在重复的元素。解法是使用键值对，存入数值的索引，若不符合条件则覆盖索引。
 ``` java
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
-        for(int i = 0;i< nums.length-1;i++) {
-            int end = i+k;
-            for(int j = i+1; j < nums.length && j<=end;j++) {
-                if(nums[i] == nums[j]) {
-                    return true;
-                }
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for(int i = 0;i< nums.length;i++) {
+            if(map.containsKey(nums[i]) && i - map.get(nums[i]) <= k) {
+                return true;
+            }else {
+                map.put(nums[i], i);
             }
         }
         return false;

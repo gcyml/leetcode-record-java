@@ -24,8 +24,9 @@ Output: 2
 
 **Difficulty:** Easy
 
-## 思路
+## 思路0
 
+题意是从数组中找出现次数超过一半的元素，即求众数。开始想到的方法是使用键值对记录出现次数。但是这方法用时22ms，仅仅击败了28%。
 ``` java
 class Solution {
     public int majorityElement(int[] nums) {
@@ -33,41 +34,39 @@ class Solution {
         for(int n: nums) {
             if(map.containsKey(n)) {
                 map.put(n, map.get(n)+1);
+                if(map.get(n) > nums.length/2) {
+                    return n;
+                }
             } else {
                 map.put(n, 1);
             }
         }
-        int max = 0, res = 0;
-        for (int key : map.keySet()) {
-             if(map.get(key) > max) {
-                max = map.get(key);
-                res = key;
-            }
-        }
-        return res;
+        return nums[0];
     }
 }
 ```
+## 思路1
 
+这个方法是从网上看到的，运行只用了3ms，击败了100%的用户。原理是众数和所有其他元素次数抵消后，仍然大于0。用 `count` 表示若和 `compareNum` 相等则 `count`自增，否则自减，若 `count`小于0则必然不是众数。
 ``` java
 class Solution {
     public int majorityElement(int[] nums) {
         int len = nums.length;
-        int compare_num = nums[0];
+        int compareNum = nums[0];
         int count = 1;
         for (int i = 1; i < len; i++) {
-            if (nums[i] == compare_num) {
+            if (nums[i] == compareNum) {
                 count++;
             } else {
                 count--;
             }
             if (count < 0) {
-                compare_num = nums[i];
+                compareNum = nums[i];
                 count = 1;
             }
 
         }
-        return compare_num;
+        return compareNum;
     }
 }
 ```
