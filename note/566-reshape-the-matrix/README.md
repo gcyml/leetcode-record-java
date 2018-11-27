@@ -1,4 +1,4 @@
-# [Toeplitz Matrix][title]
+# [Reshape the Matrix][title]
 
 ## Description
 
@@ -49,6 +49,29 @@ There is no way to reshape a 2 * 2 matrix to a 2 * 4 matrix. So output the origi
 **Difficulty:** Easy
 
 ## 思路
+
+重塑矩阵。解法很简单，算出重塑前的位置即可。
+
+``` java
+class Solution {
+    public int[][] matrixReshape(int[][] nums, int r, int c) {
+        if(r*c != nums.length * nums[0].length) {
+            return nums;
+        }
+        int[][] res = new int[r][c];
+        for(int i=0;i<r;i++) {
+            for(int j=0;j<c;j++) {
+                int n = i*c + j;
+                int row = n/nums[0].length;
+                int col = n%nums[0].length;
+                res[i][j] = nums[row][col];
+            }
+        }
+        return res;
+
+    }
+}
+```
 
 
 

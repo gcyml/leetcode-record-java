@@ -24,7 +24,7 @@ Explanation: n is 2, and the maximum sum of pairs is 4 = min(1, 2) + min(3, 4).
 
 ## 思路
 
-快速排序
+题意是把长度为 `2n` 的数组分为 `n` 对，每对取最小值，返回尽可能大的数值对总和。要使数值对的最小值尽可能大，就得避免差值大的匹配成一对。所以，排序过后，取元素索引为偶数的总和即可。
 
 ``` java
 class Solution {
