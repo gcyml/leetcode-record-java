@@ -36,6 +36,8 @@
 | 665 | [Non-decreasing Array][665]                      | [java][note-665] | Easy       |
 | 667 | [Beautiful Arrangement II][667]                  | [java][note-667] | Medium     |
 | 674 | [Longest Continuous Increasing Subsequence][674] | [java][note-674] | Easy       |
+| 697 | [Degree of an Array][697]                        | [java][note-697] | Easy       |
+|     |                                                  |                  |            |
 
 [001]: https://leetcode.com/problems/two-sum
 [026]: https://leetcode.com/problems/remove-duplicates-from-sorted-array
@@ -70,14 +72,7 @@
 [665]: https://leetcode.com/problems/non-decreasing-array
 [667]: https://leetcode.com/problems/beautiful-arrangement-ii
 [674]: https://leetcode.com/problems/longest-continuous-increasing-subsequence
-
-[605]: https://leetcode.com/problems/can-place-flowers
-[628]: https://leetcode.com/problems/maximum-product-of-three-number
-[643]: https://leetcode.com/problems/maximum-average-subarray-i
-[661]: https://leetcode.com/problems/image-smoother
-[665]: https://leetcode.com/problems/non-decreasing-array
-[667]: https://leetcode.com/problems/beautiful-arrangement-ii
-[674]: https://leetcode.com/problems/longest-continuous-increasing-subsequence
+[697]: https://leetcode.com/problems/degree-of-an-array
 
 
 [note-001]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/001-two-sum
@@ -112,3 +107,4 @@
 [note-665]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/665-non-decreasing-array
 [note-667]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/667-beautiful-arrangement-ii
 [note-674]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/674-longest-continuous-increasing-subsequence
+[note-697]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/697-degree-of-an-array

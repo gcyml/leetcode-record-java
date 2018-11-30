@@ -29,26 +29,19 @@ Explanation: The longest continuous increasing subsequence is [2], its length is
 
 ## 思路
 
-
-
+题意是给出一个未排序数组，找出最长递增子数列，返回其长度。题目很简单，线性遍历即可。
 
 ``` java
 class Solution {
     public int findLengthOfLCIS(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
         int n = nums.length;
-        int[] dp = new int[n];
+        int len = 1;
 
         int max = 1;
-        dp[0] = 1;
         for (int i = 1; i < n; i++) {
-            if (nums[i] > nums[i - 1]) {
-                dp[i] = dp[i - 1] + 1;
-            }
-            else {
-                dp[i] = 1;
-            }
-            max = Math.max(max, dp[i]);
+            len = nums[i] > nums[i - 1] ? len+1 : 1;
+            max = Math.max(max, len);
         }
         return max;
     }
