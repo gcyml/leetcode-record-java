@@ -36,6 +36,8 @@ Output: 6
 
 ## 思路0
 
+题意是找出和数组具有相同 `度` 的最小子数列, `度` 是指数组中元素的最大频数。和数组具有相同度的子数列必然是元素第一次出现和最后一次出现组成的子数列。解法大致思路是先找出数组中频数最多的元素，然后找出元素出现的初始位置和最后位置。
+
 ``` java
 class Solution {
     public int findShortestSubArray(int[] nums) {
@@ -62,7 +64,7 @@ class Solution {
                 }
                 if(j == i){
                     if(degree == 1){
-                        return 1;    
+                        return 1;
                     }else{
                         continue;
                     }
@@ -102,7 +104,7 @@ class Solution {
                 }
                 if(j == i){
                     if(max == 1){
-                        return 1;    
+                        return 1;
                     }else{
                         continue;
                     }
