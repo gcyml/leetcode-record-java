@@ -37,6 +37,11 @@
 | 667 | [Beautiful Arrangement II][667]                  | [java][note-667] | Medium     |
 | 674 | [Longest Continuous Increasing Subsequence][674] | [java][note-674] | Easy       |
 | 697 | [Degree of an Array][697]                        | [java][note-697] | Easy       |
+| 717 | [1-bit and 2-bit Characters][717]                | [java][note-717] | Easy       |
+| 724 | [Degree of an Array][724]                        | [java][note-724] | Easy       |
+| 746 | [Min Cost Climbing Stairs][746]                  | [java][note-746] | Easy       |
+| 747 | [Largest Number At Least Twice of Others][747]   | [java][note-747] | Easy       |
+| 766 | [Toeplitz Matrix][766]                           | [java][note-766] | Easy       |
 |     |                                                  |                  |            |
 
 [001]: https://leetcode.com/problems/two-sum
@@ -73,6 +78,11 @@
 [667]: https://leetcode.com/problems/beautiful-arrangement-ii
 [674]: https://leetcode.com/problems/longest-continuous-increasing-subsequence
 [697]: https://leetcode.com/problems/degree-of-an-array
+[717]: https://leetcode.com/problems/1-bit-and-2-bit-characters
+[724]: https://leetcode.com/problems/1-bit-and-2-bit-characters
+[746]: https://leetcode.com/problems/min-cost-climbing-stairs
+[747]: https://leetcode.com/problems/largest-number-at-least-twice-of-others
+[766]: https://leetcode.com/problems/toeplitz-matrix
 
 
 [note-001]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/001-two-sum
@@ -108,3 +118,8 @@
 [note-667]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/667-beautiful-arrangement-ii
 [note-674]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/674-longest-continuous-increasing-subsequence
 [note-697]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/697-degree-of-an-array
+[note-717]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/717-1-bit-and-2-bit-characters
+[note-724]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/724-find-pivot-index
+[note-746]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/746-min-cost-climbing-stairs
+[note-747]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/747-largest-number-at-least-twice-of-others
+[note-766]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/766-toeplitz-matrix

@@ -1,35 +1,38 @@
-# [1-bit and 2-bit Characters][title]
+# [Find Pivot Index][title]
 
 ## Description
 
-We have two special characters. The first character can be represented by one bit `0`. The second character can be represented by two bits (`10` or `11`).
+Given an array of integers `nums`, write a method that returns the "pivot" index of this array.
 
-Now given a string represented by several bits. Return whether the last character must be a one-bit character or not. The given string will always end with a zero.
+We define the pivot index as the index where the sum of the numbers to the left of the index is equal to the sum of the numbers to the right of the index.
+
+If no such index exists, we should return -1. If there are multiple pivot indexes, you should return the left-most pivot index.
 
 **Example 1:**
 
 ```
 Input:
-bits = [1, 0, 0]
-Output: True
+nums = [1, 7, 3, 6, 5, 6]
+Output: 3
 Explanation:
-The only way to decode it is two-bit character and one-bit character. So the last character is one-bit character.
+The sum of the numbers to the left of index 3 (nums[3] = 6) is equal to the sum of numbers to the right of index 3.
+Also, 3 is the first index where this occurs.
 ```
 
 **Example 2:**
 
 ```
 Input:
-bits = [1, 1, 1, 0]
-Output: False
+nums = [1, 2, 3]
+Output: -1
 Explanation:
-The only way to decode it is two-bit character and two-bit character. So the last character is NOT one-bit character.
+There is no index that satisfies the conditions in the problem statement.
 ```
 
 **Note:**
 
-1. `1 <= len(bits) <= 1000`.
-2. `bits[i]` is always `0` or `1`.
+1. The length of `nums` will be in the range `[0, 10000]`.
+2. Each element `nums[i]` will be an integer in the range `[-1000, 1000]`.
 
 **Tags:** Array
 
@@ -37,22 +40,29 @@ The only way to decode it is two-bit character and two-bit character. So the las
 
 ## 思路
 
-由题意可知，第一个字符为 `1` 时，其连续的两个元素必定为 `2 比特字符`。要正确分组出 `1 比特字符` 和 `2 比特字符`，可通过此特性。线性遍历时，当前元素若为 `1`，则跳过下一元素，`i`自增。若最后一个字符为 `2 比特字符`，则 `i == bits.length`。
+题意是找到数组中的某个元素，其左侧所有元素相加的和等于右侧所有元素相加的和。解法就是先找算出所有元素总和得到 `sum`。而后再次线性遍历，判断 `sum - nums[i]` 是否等于左侧元素的总和的2倍。
 
 ``` java
 class Solution {
-    public boolean isOneBitCharacter(int[] bits) {
-        int i = 0;
-        for(;i<bits.length-1;i++) {
-            if(bits[i] == 1) {
-                i++;
-            }
+    public int pivotIndex(int[] nums) {
+        if(nums.length < 3) return -1;
+        int sum = 0, curSum = 0;
+        for(int n :nums){
+            sum += n;
         }
-        return i != bits.length;
+        for(int i =0;i<nums.length;i++) {
+            if(sum - nums[i] == curSum *2) {
+                return i;
+            }
+            curSum += nums[i];
+
+        }
+
+        return -1;
     }
 }
 ```
 
 
 
-[title]: https://leetcode.com/problems/1-bit-and-2-bit-characters
+[title]: https://leetcode.com/problems/find-pivot-index
