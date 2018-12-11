@@ -31,6 +31,22 @@ Output: [[1,4],[2,5],[3,6]]
 
 ## 思路
 
+题意是转置矩阵，比较简单，把行索引和列索引互换即可。
 
+``` java
+class Solution {
+    public int[][] transpose(int[][] A) {
+        int row = A.length;
+        int col = A[0].length;
+        int[][] res = new int[col][row];
+        for(int i = 0;i<row;i++) {
+             for(int j = 0;j<col;j++) {
+                res[j][i] = A[i][j];
+             }
+        }
+         return res;
+    }
+}
+```
 
 [title]: https://leetcode.com/problems/transpose-matrix

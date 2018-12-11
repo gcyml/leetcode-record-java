@@ -42,6 +42,8 @@
 | 746 | [Min Cost Climbing Stairs][746]                  | [java][note-746] | Easy       |
 | 747 | [Largest Number At Least Twice of Others][747]   | [java][note-747] | Easy       |
 | 766 | [Toeplitz Matrix][766]                           | [java][note-766] | Easy       |
+| 830 | [Positions of Large Groups][830]                 | [java][note-830] | Easy       |
+| 832 | [Flipping an Image][832]                         | [java][note-832] | Easy       |
 |     |                                                  |                  |            |
 
 [001]: https://leetcode.com/problems/two-sum
@@ -83,7 +85,8 @@
 [746]: https://leetcode.com/problems/min-cost-climbing-stairs
 [747]: https://leetcode.com/problems/largest-number-at-least-twice-of-others
 [766]: https://leetcode.com/problems/toeplitz-matrix
-
+[830]: https://leetcode.com/problems/positions-of-large-groups
+[832]: https://leetcode.com/problems/flipping-an-image
 
 [note-001]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/001-two-sum
 [note-026]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/026-remove-duplicates-from-sorted-array
@@ -123,3 +126,5 @@
 [note-746]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/746-min-cost-climbing-stairs
 [note-747]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/747-largest-number-at-least-twice-of-others
 [note-766]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/766-toeplitz-matrix
+[note-830]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/830-positions-of-large-groups
+[note-832]: https://github.com/gcyml/leetcode-record-java/tree/master/note/array/832-flipping-an-image
