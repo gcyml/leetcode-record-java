@@ -58,4 +58,32 @@ Output: true
 
 **Difficulty:** Easy
 
+## 思路
+
+题意是判断数组是否为单调递增或单调递减数列。题目比较简单，先判断第一个元素和第二个元素是递增还是递减，而后判断后面的数列是否符合条件。
+
+``` java
+class Solution {
+    public boolean isMonotonic(int[] A) {
+        int isIncrease = -1;
+        for(int i = 0;i<A.length-1;i++){
+            if(A[i] < A[i+1]) {
+                if(isIncrease == 1) {
+                    return false;
+                } else if(isIncrease == -1){
+                    isIncrease = 0;
+                }
+            } else if(A[i] > A[i+1]) {
+                if(isIncrease == 0) {
+                    return false;
+                } else if(isIncrease == -1){
+                    isIncrease = 1;
+                }
+            }
+        }
+        return true;
+    }
+}
+```
+
 [title]: https://leetcode.com/problems/monotonic-array

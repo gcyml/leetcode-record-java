@@ -61,4 +61,41 @@ Explanation : Possible partition [1,1],[2,2],[2,2]
 
 **Difficulty:** Easy
 
+## 思路
+
+题意是把相同数分组，若分组长度均为X的倍数，且X大于2，则为真。解法是记录所有元素的出现次数，由于X必须满足 `2 < X <= min`，若存在X值符合条件，则返回`true`。
+
+``` java
+class Solution {
+    public boolean hasGroupsSizeX(int[] deck) {
+        int[] map = new int[10000];
+        int min = Integer.MAX_VALUE;
+        for(int i : deck){
+            map[i]++;
+        }
+
+        for(int i =0;i<10000;i++) {
+            if(map[i] > 0) {
+                min = Math.min(map[i], min);
+            }
+        }
+
+        for(int i =2;i<=min;i++){
+            int j = 0;
+            while(j<10000){
+                if(map[j] > 0 && map[j] % i != 0) {
+                    break;
+                }
+                j++;
+            }
+            if(j == 10000) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+```
+
 [title]: https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards
