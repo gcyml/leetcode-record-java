@@ -1,0 +1,24 @@
+class Solution {
+    public String reverseStr(String s, int k) {
+        char[] letters = s.toCharArray();
+        int i = 2*k;
+        for(;i<letters.length;i+= 2*k) {
+            helper(letters, i-(2*k), i-k-1);
+        }
+        if(i-letters.length > k) {
+            helper(letters, i-(2*k), letters.length-1);
+        } else {
+            helper(letters, i-(2*k), i-k-1);
+        }
+        return String.valueOf(letters);
+    }
+    public void helper(char[] letters, int left, int right) {
+        while(left < right) {
+            char tmp = letters[left];
+            letters[left] = letters[right];
+            letters[right] = tmp;
+            left++;
+            right--;
+        }
+    }
+}

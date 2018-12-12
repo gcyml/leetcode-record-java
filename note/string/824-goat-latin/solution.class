@@ -1,0 +1,27 @@
+class Solution {
+    public String toGoatLatin(String S) {
+        String[] words = S.split(" ");
+        StringBuilder sb = new StringBuilder();
+        String count = "a";
+        for(int i = 0;i<words.length;i++) {
+            char firstLetter = words[i].toLowerCase().charAt(0);
+            if(isVowel(firstLetter)) {
+                sb.append(words[i]);
+            } else {
+                sb.append(words[i].substring(1));
+                sb.append(words[i].charAt(0));
+            }
+            sb.append("ma");
+            sb.append(count);
+            count += "a";
+            sb.append(' ');
+        }
+        return sb.toString().trim();
+    }
+    boolean isVowel(char c) {
+        if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+            return true;
+        }
+        return false;
+    }
+}

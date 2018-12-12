@@ -1,0 +1,54 @@
+class Solution {
+    public int strStr(String haystack, String needle) {
+        return indexOf(haystack, needle);
+    }
+    public int indexOf(String s, String t) {
+        char[] source = s.toCharArray();
+        char[] target = t.toCharArray();
+        return indexOf(source, 0, source.length,
+                target, 0, target.length,
+                0);
+    }
+    static int indexOf(char[] source, int sourceOffset, int sourceCount,
+            char[] target, int targetOffset, int targetCount,
+            int fromIndex) {
+        //å¦æå¼å§æç´¢çä½ç½®å¤§äºèµæºæ°ç»é¿åº¦ï¼ç´æ¥è¿åèµæºæ°ç»é¿åº¦ï¼ç®æ æ°ç»é¿åº¦ä¸º0ï¼æ-1
+        if (fromIndex >= sourceCount) {
+            return (targetCount == 0 ? sourceCount : -1);
+        }
+        //å¦æå¼å§æç´¢ä½ç½®å°äº0ï¼åè®¾ä¸º0
+        // if (fromIndex < 0) {
+        //     fromIndex = 0;
+        // }
+        
+        //å¦æç®æ æ°ç»é¿åº¦ä¸º0ï¼ç´æ¥è¿åå¼å§æç´¢ä½ç½®ã
+        if (targetCount == 0) {
+            return fromIndex;
+        }
+        //åå°ç®æ æ¯æ°ç»çç¬¬ä¸ä¸ªcharå¼
+        char first = target[targetOffset];
+        //åå°æåä¸æ¬¡æç´¢çä½ç½®
+        int max = sourceOffset + (sourceCount - targetCount);
+
+        for (int i = sourceOffset + fromIndex; i <= max; i++) {
+            //åå°ç¬¬ä¸ä¸ªå­ç¬¦ç¸åçä½ç½®
+            if (source[i] != first) {
+                while (++i <= max && source[i] != first);
+            }
+
+            //å¾ªç¯æ¯è¾æ¥ä¸æ¥ææææçå­ç¬¦ï¼å¦æå¨é¨ç¸ååè¿åç¬¬ä¸ä¸ªå­ç¬¦çä½ç½®
+            if (i <= max) {
+                int j = i + 1;
+                int end = j + targetCount - 1;
+                for (int k = targetOffset + 1; j < end && source[j]
+                        == target[k]; j++, k++);
+
+                if (j == end) {
+                    /* Found whole string. */
+                    return i - sourceOffset;
+                }
+            }
+        }
+        return -1;
+    }
+}

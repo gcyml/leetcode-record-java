@@ -1,0 +1,28 @@
+class Solution {
+    public boolean isLongPressedName(String name, String typed) {
+        int pre = -1;
+        int pos = 0;
+        int n = 0;
+        for(char c : name.toCharArray()) {
+            if(c == pre) {
+                n++;
+            } else {
+                while(pos < typed.length() && typed.charAt(pos) == pre) {
+                    n--;
+                    pos++;
+                } 
+                if(n > 0) {
+                    return false;
+                }
+                pre = c;
+                n = 1;      
+            }
+            
+        }
+        while(pos < typed.length() && typed.charAt(pos) == pre) {
+            n--;
+            pos++;
+        } 
+        return n <= 0;
+    }
+}
