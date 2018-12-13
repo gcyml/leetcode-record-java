@@ -74,4 +74,45 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 **Difficulty:** Easy
 
+## 思路
+
+题目是罗马数字的转换。没有什么特殊的解法，按正常逻辑即可。判断当前字母代表值是否大于后一位字母的代表值，若大于则结果累加，若小于则减去。
+
+``` java
+class Solution {
+    public int romanToInt(String s) {
+        int res = 0;
+        if(s == null) return res;
+        for(int i= 0;i<s.length()-1;i++) {
+            int tmp = helper(s.charAt(i));
+            if(tmp < helper(s.charAt(i+1))) {
+                res -= tmp;
+            } else {
+                res += tmp;
+            }
+        }
+        res += helper(s.charAt(s.length()-1));
+        return res;
+    }
+    public int helper(char s) {
+        if(s == 'I') {
+            return 1;
+        } else if(s == 'V') {
+            return 5;
+        } else if(s == 'X') {
+            return 10;
+        } else if(s == 'L') {
+            return 50;
+        } else if(s == 'C') {
+            return 100;
+        } else if(s == 'D') {
+            return 500;
+        } else if(s == 'M') {
+            return 1000;
+        }
+        return 0;
+    }
+}
+```
+
 [title]: https://leetcode.com/problems/roman-to-integer

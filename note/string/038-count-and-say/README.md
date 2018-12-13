@@ -43,4 +43,32 @@ Output:  "1211"
 
 **Difficulty:** Easy
 
+## 思路
+
+这类层层调用生成的题用递归是最好的，得到上一层的结果后再进行解析。解析时逻辑是碰到连续相同的数字用连续的个数和数值替换，即 `111` 用 `31` 替换。
+
+``` java
+class Solution {
+    public String countAndSay(int n) {
+        StringBuilder sb = new StringBuilder();
+        if(n==1) {
+            sb.append("1");
+        } else {
+            String sayStr = countAndSay(n-1);
+            char[] character = sayStr.toCharArray();
+            for(int i=0;i<character.length;) {
+                int j = i;
+                while(++j < character.length) {
+                    if(character[j] != character[i])
+                        break;
+                }
+                sb.append(String.valueOf(j-i) + character[i]);
+                i = j;
+            }
+        }
+        return sb.toString();
+    }
+}
+```
+
 [title]: https://leetcode.com/problems/count-and-say
