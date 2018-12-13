@@ -14,21 +14,21 @@ following cases holds:
 
 Otherwise, we define that this word doesn't use capitals in a right way.
 
-**Example 1:**  
+**Example 1:**
 
-    
-    
-    **Input:** "USA"
-    **Output:** True
-    
 
-**Example 2:**  
+```
+Input: "USA"
+Output: True
+```
 
-    
-    
-    **Input:** "FlaG"
-    **Output:** False
-    
+**Example 2:**
+
+
+```
+Input: "FlaG"
+Output: False
+```
 
 **Note:** The input will be a non-empty word consisting of uppercase and
 lowercase latin letters.

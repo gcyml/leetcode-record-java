@@ -7,20 +7,20 @@ string.
 
 **Example 1:**
 
-    
-    
-    **Input:** "hello"
-    **Output:** "holle"
-    
+
+```
+Input:** "hello"
+Output:** "holle"
+```
 
 **Example 2:**
 
-    
-    
-    **Input:** "leetcode"
-    **Output:** "leotcede"
+```
+Input:** "leetcode"
+Output:** "leotcede"
+```
 
-**Note:**  
+**Note:**
 The vowels does not include the letter  "y".
 
 

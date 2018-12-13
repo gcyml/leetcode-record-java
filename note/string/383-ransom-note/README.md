@@ -8,15 +8,14 @@ note can be constructed from the magazines ; otherwise, it will return false.
 
 Each letter in the magazine string can only be used once in your ransom note.
 
-**Note:**  
+**Note:**
 You may assume that both strings contain only lowercase letters.
 
-    
-    
-    canConstruct("a", "b") -> false
-    canConstruct("aa", "ab") -> false
-    canConstruct("aa", "aab") -> true
-    
+```
+canConstruct("a", "b") -> false
+canConstruct("aa", "ab") -> false
+canConstruct("aa", "aab") -> true
+```
 
 
 **Tags:** String

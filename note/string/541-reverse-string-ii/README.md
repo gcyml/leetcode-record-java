@@ -8,13 +8,13 @@ less than k characters left, reverse all of them. If there are less than 2k
 but greater than or equal to k characters, then reverse the first k characters
 and left the other as original.
 
-**Example:**  
+**Example:**
 
-    
-    
-    **Input:** s = "abcdefg", k = 2
-    **Output:** "bacdfeg"
-    
+
+```
+Input: s = "abcdefg", k = 2
+Output: "bacdfeg"
+```
 
 **Restrictions:** **
 
