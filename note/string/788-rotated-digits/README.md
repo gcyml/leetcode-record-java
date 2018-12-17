@@ -27,11 +27,44 @@ Note that 1 and 10 are not good numbers, since they remain unchanged after rotat
 
 **Note:**
 
-  * N  will be in range `[1, 10000]`.
+* N  will be in range `[1, 10000]`.
 
 
 **Tags:** String
 
 **Difficulty:** Easy
+
+## 思路
+
+本题难度在于判断一个数是否为好数。从好数的定义可知，若数中包含 `3`、`4`、`7` 必然不为好数，若数字全部由 `0`、`4`、`8` 组成，其旋转后得到的结果为自身，也不符合好数的定义。
+
+``` java
+class Solution {
+    public int rotatedDigits(int N) {
+        int res= 0;
+        for(int i=1;i<=N;i++) {
+            if(helper(i)) {
+                res++;
+            }
+        }
+        return res;
+    }
+    public boolean helper(int n) {
+        int selfCount = 0;
+        int count = 0;
+        while(n != 0) {
+            int tmp = n%10;
+            if(tmp == 3 || tmp ==4 || tmp == 7) {
+                return false;
+            } else if(tmp == 0 || tmp ==1 || tmp == 8){
+                selfCount++;
+            }
+            n /= 10;
+            count++;
+        }
+        return selfCount != count;
+    }
+}
+```
 
 [title]: https://leetcode.com/problems/rotated-digits

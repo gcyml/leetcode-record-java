@@ -68,4 +68,34 @@ Explanation: 1 group ["abcd","cdab","adcb","cbad"]
 
 **Difficulty:** Easy
 
+## 思路
+strHash函数,传一个字符串,返回该字符串的奇数位字符和偶数位字符出现的在字母表中的分布
+构造一个set来存储每个字符串的strHash后的结果
+
+``` java
+class Solution {
+    public int numSpecialEquivGroups(String[] A) {
+       Set<String> strSet = new HashSet<>();
+        for (String tmp : A) {
+            strSet.add(strHash(tmp));
+        }
+        return strSet.size();
+    }
+
+    private String strHash(String tmp) {
+        if (tmp.length() == 1) return tmp;
+        int[] cArr = new int[52];
+        int odd = 0;
+        for (char c : tmp.toCharArray()) {
+            cArr[(odd++ % 2 == 0 ? 26 : 0) + c - 'a']++;
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i : cArr) {
+            sb.append(i);
+        }
+        return sb.toString();
+    }
+}
+```
+
 [title]: https://leetcode.com/problems/groups-of-special-equivalent-strings

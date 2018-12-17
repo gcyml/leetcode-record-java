@@ -2,8 +2,7 @@
 
 ## Description
 
-Given two strings `A` and `B` of lowercase letters, return `true` if and only
-if we can swap two letters in `A` so that the result equals `B`.
+Given two strings `A` and `B` of lowercase letters, return `true` if and only if we can swap two letters in `A` so that the result equals `B`.
 
 
 
@@ -51,13 +50,21 @@ Output: false
 
 **Note:**
 
-  1. `0 <= A.length <= 20000`
-  2. `0 <= B.length <= 20000`
-  3. `A` and `B` consist only of lowercase letters.
+1. `0 <= A.length <= 20000`
+2. `0 <= B.length <= 20000`
+3. `A` and `B` consist only of lowercase letters.
 
 
 **Tags:** String
 
 **Difficulty:** Easy
+
+## 思路
+
+题意是两个字符串 `A` 和 `B`, 判断 `A` 是否可以通过交换两个字母得到 `B`。
+
+``` java
+
+```
 
 [title]: https://leetcode.com/problems/buddy-strings
