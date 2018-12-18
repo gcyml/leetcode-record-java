@@ -2,17 +2,13 @@
 
 ## Description
 
-Given an array of characters, compress it [**in-
-place**](https://en.wikipedia.org/wiki/In-place_algorithm).
+Given an array of characters, compress it [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm).
 
-The length after compression must always be smaller than or equal to the
-original array.
+The length after compression must always be smaller than or equal to the original array.
 
 Every element of the array should be a **character** (not int) of length 1.
 
-After you are done **modifying the input array[in-
-place](https://en.wikipedia.org/wiki/In-place_algorithm)** , return the new
-length of the array.
+After you are done **modifying the input array[in-place](https://en.wikipedia.org/wiki/In-place_algorithm)** , return the new length of the array.
 
 
 
@@ -69,7 +65,6 @@ Notice each digit has it's own entry in the array.
 ```
 
 
-
 **Note:**
 
   1. All characters have an ASCII value in `[35, 126]`.
@@ -79,5 +74,35 @@ Notice each digit has it's own entry in the array.
 **Tags:** String
 
 **Difficulty:** Easy
+
+## 思路
+
+解法是使用双指针的方法，`write` 记录压缩后的索引位置，`mark` 记录同一个字符首次出现的位置。线性遍历数组，若当前字符不等于下一字符时，则说明该字符不再连续，由 `i` 和 `mark` 算出连续个数，然后把连续的个数值转成字符写入到原数组中。最后返回 `write`。
+
+``` java
+class Solution {
+    public int compress(char[] chars) {
+        if(chars.length == 0) {
+            return 0;
+        }
+        int mark = 0;       
+        int write = 0;
+        for(int i = 0; i < chars.length; i++){
+            if(i == chars.length-1 || chars[i] != chars[i+1] ) {
+                chars[write] = chars[mark];
+                write++;
+                if(mark < i) {
+                    for(char a : String.valueOf(i-mark+1).toCharArray()) {
+                        chars[write++] = a;
+                    }
+                }
+                mark = i+1;
+            }
+        }
+        return write;
+        
+    }
+}
+```
 
 [title]: https://leetcode.com/problems/string-compression

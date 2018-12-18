@@ -37,4 +37,19 @@ but not a subsequence of any other strings in the group of two strings.
 
 **Difficulty:** Easy
 
+## 思路
+
+虽然题目很长，但只要从其他角度去理解就很好做出来。两个字符串，若相等，则不存在特殊字符串；若不相等，则最长特殊字符串是两个字符串中最长的那个。
+
+``` java
+class Solution {
+    public int findLUSlength(String a, String b) {
+        if(a.equals(b)) {
+            return -1;
+        } 
+        return Math.max(a.length(), b.length());
+    }
+}
+```
+
 [title]: https://leetcode.com/problems/longest-uncommon-subsequence-i
