@@ -1,0 +1,25 @@
+class Solution {
+    public int projectionArea(int[][] grid) {
+        int row = grid.length;
+        int col = grid[0].length;
+        int res = 0;
+        for(int i = 0;i< row;i++) {
+            int colMax = 0;
+            for(int j = 0;j<col;j++) {
+                colMax = Math.max(grid[i][j], colMax);
+            }
+            res += colMax;
+        }
+        for(int i = 0;i< col;i++) {
+            int rowMax = 0;
+            for(int j = 0;j<row;j++) {
+                rowMax = Math.max(grid[j][i], rowMax);
+                if(grid[j][i] != 0) {
+                    res++;
+                }
+            }
+            res += rowMax;
+        }
+        return res;
+    }
+}

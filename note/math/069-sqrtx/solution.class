@@ -1,0 +1,13 @@
+class Solution {
+    public int mySqrt(int x) {
+        // å¦æåå§å¼å0x5f37642fï¼åä¼è¿ä¸æ­¥å å¿«è®¡ç®éåº¦
+        double x1 = x/2.0;
+        double x2 = 0.0, err = x2 - x1;
+        while(Math.abs(err)>0.00000001){
+            x2 = x1 - (x1 * x1 - x) / (2 * x1);
+            err = x2 - x1;
+            x1 = x2;
+        }
+        return (int)x2;
+    }
+}

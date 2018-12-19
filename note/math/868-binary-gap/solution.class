@@ -1,0 +1,17 @@
+class Solution {
+    public int binaryGap(int N) {
+        int cmp = 1;
+        int curIndex = 0, dist = 0, lastOne = -1, res = 0;
+        while(cmp <= N) {
+            if((cmp & N) != 0) {
+        
+                dist = lastOne != -1?curIndex-lastOne:0;
+                lastOne = curIndex;
+                res = Math.max(dist, res);
+            }
+            cmp = cmp << 1;
+            curIndex++;
+        }
+        return res;
+    }
+}
