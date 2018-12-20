@@ -10,19 +10,13 @@ perfect number and false when it is not.
 
 **Example:**  
 
-    
-    
-
+```
 Input: 28
-
 Output: True
-
 Explanation:** 28 = 1 + 2 + 4 + 7 + 14
-
-    
+```
 
 **Note:** The input number **n** will not exceed 100,000,000. (1e8)
-
 
 **Tags:** Math
 

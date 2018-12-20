@@ -22,7 +22,6 @@ Return the total area of all three projections.
 
 ```
 Input: [[2]]
-
 Output: 5
 ```
 
@@ -33,8 +32,9 @@ Input: [[1,2],[3,4]]
 Output: 17
 Explanation:**
 Here are the three projections ( "shadows") of the shape made with each axis-aligned plane.
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/02/shadow.png)
 ```
+
+![pic](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/02/shadow.png)
 
 **Example 3:**
 
