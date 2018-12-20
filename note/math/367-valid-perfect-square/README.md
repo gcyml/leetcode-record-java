@@ -26,7 +26,7 @@ Output: false
 
 ## 思路 0
 
-题意是判断一个数是否为完全平方数。从 1 搜索到 sqrt(num)，看有没有平方正好等于num的数。
+题意是判断一个数是否为完全平方数。从 1 搜索到 sqrt(num)，看有没有平方正好等于 num 的数。
 
 ``` java
 class Solution {
