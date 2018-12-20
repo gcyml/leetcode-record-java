@@ -14,9 +14,12 @@ number that is missing. Return them in the form of an array.
 **Example 1:**  
 
     
-    
-    **Input:** nums = [1,2,2,4]
-    **Output:** [2,3]
+    
+
+Input: nums = [1,2,2,4]
+
+Output: [2,3]
+
     
 
 **Note:**  

@@ -37,7 +37,6 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 **Tags:** Array, Greedy
 
-
 ## 思路
 
 题意是给出一个数组代表每天的股票金额，在每天只能买或卖的情况下求出收益最高值，这...，这也太简单了吧，把所有相邻递增的值都加起来即可。
@@ -55,8 +54,5 @@ class Solution {
     }
 }
 ```
-
-
-
 
 [title]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii

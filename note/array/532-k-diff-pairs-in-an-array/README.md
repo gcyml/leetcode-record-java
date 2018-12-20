@@ -30,15 +30,19 @@ Explanation: There is one 0-diff pair in the array, (1, 1).
 ```
 
 **Note:**
+
 1. The pairs (i, j) and (j, i) count as the same pair.
 2. The length of the array won't exceed 10,000.
 3. All the integers in the given input belong to the range: [-1e7, 1e7].
+
 **Tags:** Array
 
 **Difficulty:** Easy, Two Pointers
 
-## 思路0
-题意是给定一个整数数组和一个整数 `k`, 你需要在数组里找到不同的 `k-diff` 数对。这里将 k-diff 数对定义为一个整数对 (i, j), 其中 i 和 j 都是数组中的数字，且两数之差的绝对值是 `k`。第一种方法是使用键值对，而后找出数组对 `pair(a,b)`，由 `a - b = k`从 `a`找到 `b`。此外，由于题中要求数值对唯一，需要从map中删去`b`。
+## 思路 0
+
+题意是给定一个整数数组和一个整数 `k`, 你需要在数组里找到不同的 `k-diff` 数对。这里将 k-diff 数对定义为一个整数对 (i, j), 其中 i 和 j 都是数组中的数字，且两数之差的绝对值是 `k`。第一种方法是使用键值对，而后找出数组对 `pair(a,b)`，由 `a - b = k`从 `a` 找到 `b`。此外，由于题中要求数值对唯一，需要从map中删去 `b`。
+
 ``` java
 public class Solution {
     public int findPairs(int[] nums, int k) {
@@ -78,6 +82,5 @@ class Solution {
     }
 }
 ```
-
 
 [title]: https://leetcode.com/problems/k-diff-pairs-in-an-array

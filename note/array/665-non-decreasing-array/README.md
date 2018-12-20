@@ -25,12 +25,12 @@ The n and k are in the range 1 <= k < n <= 10^4.
 ## 思路
 
 题意是通过修改一个元素使得数组变成非递减数组。解法是遍历数组，设当前元素为 `nums[i]`，若小于前一元素，即 `nums[i] < nums[i-1]`，则替换元素。替换的策略有两种：1是替换前一元素变成当前元素，2是当前元素替换成前一元素。这两种策略采用哪一种需要考虑前面的数字的前面的数字，即 `nums[i-2]`，存在两种情况：
+
 1. `nums[i-2] <= nums[i] < nums[i-1]`
 2. `nums[i-2] > nums[i] < nums[i-1]`
 
 要保证更改后数组为非递减数组，即满足 `nums[i-2] <= nums[i-1] <= nums[i]`。
 因此，第一种情况下，则必须要采取第一种策略，即 `nums[i-1] = nums[i]` 才能保证此更改后数组为非递减数组；而在第二种情况中，则需要使得 `nums[i] = nums[i-1]`。
-
 
 ``` java
 class Solution {
@@ -49,7 +49,5 @@ class Solution {
     }
 }
 ```
-
-
 
 [title]: https://leetcode.com/problems/non-decreasing-array

@@ -30,7 +30,9 @@ Output: false
 **Difficulty:** Easy
 
 ## 思路
+
 题意是在数组相邻k个元素内，是否存在重复的元素。解法是使用键值对，存入数值的索引，若不符合条件则覆盖索引。
+
 ``` java
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
@@ -46,6 +48,5 @@ class Solution {
     }
 }
 ```
-
 
 [title]: https://leetcode.com/problems/contains-duplicate-ii

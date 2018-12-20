@@ -7,7 +7,6 @@ string.
 
 **Example 1:**
 
-
 ```
 Input:** "hello"
 Output:** "holle"
@@ -22,7 +21,6 @@ Output:** "leotcede"
 
 **Note:**
 The vowels does not include the letter  "y".
-
 
 **Tags:** Two Pointers, String
 

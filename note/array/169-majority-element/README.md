@@ -27,6 +27,7 @@ Output: 2
 ## 思路0
 
 题意是从数组中找出现次数超过一半的元素，即求众数。开始想到的方法是使用键值对记录出现次数。但是这方法用时22ms，仅仅击败了28%。
+
 ``` java
 class Solution {
     public int majorityElement(int[] nums) {
@@ -45,9 +46,11 @@ class Solution {
     }
 }
 ```
+
 ## 思路1
 
 这个方法是从网上看到的，运行只用了3ms，击败了100%的用户。原理是众数和所有其他元素次数抵消后，仍然大于0。用 `count` 表示若和 `compareNum` 相等则 `count`自增，否则自减，若 `count`小于0则必然不是众数。
+
 ``` java
 class Solution {
     public int majorityElement(int[] nums) {

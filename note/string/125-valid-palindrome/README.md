@@ -10,7 +10,6 @@ palindrome.
 
 **Example 1:**
 
-
 ```
 Input:  "A man, a plan, a canal: Panama"
 Output: true
@@ -18,12 +17,10 @@ Output: true
 
 **Example 2:**
 
-
 ```
 Input:  "race a car"
 Output: false
 ```
-
 
 **Tags:** Two Pointers, String
 
@@ -57,9 +54,7 @@ class Solution {
             right--;
         }
         return true;
-        
     }
-    
 }
 ```
 

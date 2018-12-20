@@ -14,7 +14,6 @@ substring of it; and B is not a substring of A repeated two times
 **Note:**  
 The length of `A` and `B` will be between 1 and 10000.
 
-
 **Tags:** String
 
 **Difficulty:** Easy
@@ -34,9 +33,8 @@ class Solution {
         }
         if(t.indexOf(B) != -1) {
             return cnt;
-        } 
+        }
         return (t+A).indexOf(B) != -1? cnt+1: -1;
-    
     }
 }
 ```

@@ -74,6 +74,4 @@ class Solution {
 }
 ```
 
-
-
 [title]: https://leetcode.com/problems/image-smoother

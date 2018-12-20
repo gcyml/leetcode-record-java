@@ -31,7 +31,9 @@ Output: true
 **Difficulty:** Easy
 
 ## 思路
+
 题意是判断数组是否存在重复的元素，简单方法是使用 `HashSet` 来记录数组，判断其长度是否等于数组长度即可。
+
 ``` java
 class Solution {
     public boolean containsDuplicate(int[] nums) {

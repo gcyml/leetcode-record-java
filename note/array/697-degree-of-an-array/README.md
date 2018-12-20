@@ -120,6 +120,4 @@ class Solution {
 }
 ```
 
-
-
 [title]: https://leetcode.com/problems/longest-continuous-increasing-subsequence

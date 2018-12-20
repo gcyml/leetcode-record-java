@@ -37,6 +37,7 @@ rotate 2 steps to the right: [3,99,-1,-100]
 ## 思路
 
 题意是给定一个数组，将数组中的元素向右移动 `k` 个位置。思路是把数组分为两部分，一部分是前半部分右移到尾部位置的子数组，即 `i < len - k`，另一部分是尾部 `k` 个元素的子数组，即 `len - k <= i < len`。两部分子数组分开运算即可。需要注意的是由于 `k` 可能大于数组的长度，需要求出真正的右移步数。
+
 ``` java
 class Solution {
     public void rotate(int[] nums, int k) {

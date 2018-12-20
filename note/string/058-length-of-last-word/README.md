@@ -12,12 +12,10 @@ characters only.
 
 **Example:**
 
-
 ```
 Input: "Hello World"
 Output: 5
 ```
-
 
 **Tags:** String
 

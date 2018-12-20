@@ -15,22 +15,32 @@ Return that maximum distance to closest person.
 **Example 1:**
 
 ```
-Input: [1,0,0,0,1,0,1]
-Output: 2
-Explanation:
-If Alex sits in the second open seat (seats[2]), then the closest person has distance 2.
-If Alex sits in any other open seat, the closest person has distance 1.
+Input: [1,0,0,0,1,0,1]
+
+Output: 2
+
+Explanation:
+
+If Alex sits in the second open seat (seats[2]), then the closest person has distance 2.
+
+If Alex sits in any other open seat, the closest person has distance 1.
+
 Thus, the maximum distance to the closest person is 2.
 ```
 
 **Example 2:**
 
 ```
-Input: [1,0,0,0]
-Output: 3
-Explanation:
-If Alex sits in the last seat, the closest person is 3 seats away.
-This is the maximum distance possible, so the answer is 3.
+Input: [1,0,0,0]
+
+Output: 3
+
+Explanation:
+
+If Alex sits in the last seat, the closest person is 3 seats away.
+
+This is the maximum distance possible, so the answer is 3.
+
 ```
 
 **Note:**
@@ -38,12 +48,12 @@ This is the maximum distance possible, so the answer is 3.
 1. `1 <= seats.length <= 20000`
 2. `seats` contains only 0s or 1s, at least one `0`, and at least one `1`.
 
-
 **Tags:** Array
 
 **Difficulty:** Easy
 
 ## 思路
+
 题意是找到一个能够使乘客与离他最近的人之间的距离达到最大化的座位。大致有三种情况：
 
 1. 0001

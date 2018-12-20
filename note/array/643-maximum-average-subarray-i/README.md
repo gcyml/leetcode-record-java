@@ -42,6 +42,4 @@ class Solution {
 }
 ```
 
-
-
 [title]: https://leetcode.com/problems/maximum-average-subarray-i

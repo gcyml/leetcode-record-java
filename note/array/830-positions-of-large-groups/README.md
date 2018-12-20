@@ -18,15 +18,19 @@ The final answer should be in lexicographic order.
 ```
 Input: "abbxxxxzzy"
 Output: [[3,6]]
-Explanation : "xxxx" is the single large group with starting  3 and ending positions 6.
+Explanation : "xxxx" is the single large group with starting  3 and ending positions 6.
+
 ```
 
 **Example 2:**
 
 ```
-Input: "abc"
-Output: []
-Explanation : We have "a","b" and "c" but no large group.
+Input: "abc"
+
+Output: []
+
+Explanation : We have "a","b" and "c" but no large group.
+
 ```
 
 **Example 3:**
@@ -37,7 +41,6 @@ Output: [[3,5],[6,9],[12,14]]
 ```
 
 **Note:** `1 <= S.length <= 1000`
-
 
 **Tags:** Array
 
@@ -67,7 +70,5 @@ class Solution {
     }
 }
 ```
-
-
 
 [title]: https://leetcode.com/problems/positions-of-large-groups

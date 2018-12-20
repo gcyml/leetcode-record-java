@@ -13,8 +13,6 @@ become invalid.
 
 Now given a positive number `N`, how many numbers X from `1` to `N` are good?
 
-
-
 **Example:**
 
 ```
@@ -27,8 +25,7 @@ Note that 1 and 10 are not good numbers, since they remain unchanged after rotat
 
 **Note:**
 
-* N  will be in range `[1, 10000]`.
-
+* N will be in range `[1, 10000]`.
 
 **Tags:** String
 

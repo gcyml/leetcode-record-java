@@ -22,8 +22,6 @@ count-and-say sequence.
 
 Note: Each term of the sequence of integers will be represented as a string.
 
-
-
 **Example 1:**
 
 ```
@@ -32,7 +30,6 @@ Output:  "1"
 ```
 
 **Example 2:**
-
 
 ```
 Input: 4

@@ -30,7 +30,6 @@ Explanation: You can't get a non-decreasing array by modify at most one element.
 
 ## 思路
 
-
 ``` java
 class Solution {
     public int[] constructArray(int n, int k) {
@@ -44,7 +43,5 @@ class Solution {
     }
 }
 ```
-
-
 
 [title]: https://leetcode.com/problems/beautiful-arrangement-ii

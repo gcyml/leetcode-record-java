@@ -9,14 +9,12 @@ The input strings are both **non-empty** and contains only characters `1` or
 
 **Example 1:**
 
-
 ```
 Input: a =  "11", b = "1"
 Output:  "100"
 ```
 
 **Example 2:**
-
 
 ```
 Input: a =  "1010", b = "1011"
@@ -56,9 +54,8 @@ class Solution {
         if(add==1) {
             result = '1' +result;
         }
-            
         return result;
-    }        
+    }
 }
 ```
 

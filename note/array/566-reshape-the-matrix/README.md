@@ -73,6 +73,4 @@ class Solution {
 }
 ```
 
-
-
 [title]: https://leetcode.com/problems/reshape-the-matrix

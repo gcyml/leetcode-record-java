@@ -43,7 +43,4 @@ class Solution {
 }
 ```
 
-
-
-
 [title]: https://leetcode.com/problems/pascals-triangle-ii

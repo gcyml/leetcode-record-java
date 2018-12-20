@@ -74,6 +74,4 @@ class Solution {
   }
 ```
 
-
-
 [title]: https://leetcode.com/problems/maximum-product-of-three-number

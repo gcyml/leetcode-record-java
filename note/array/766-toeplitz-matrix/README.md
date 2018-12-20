@@ -82,5 +82,4 @@ class Solution {
 }
 ```
 
-
 [title]: https://leetcode.com/problems/toeplitz-matrix

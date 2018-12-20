@@ -44,5 +44,4 @@ class Solution {
 }
 ```
 
-
 [title]: https://leetcode.com/problems/max-consecutive-ones

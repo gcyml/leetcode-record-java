@@ -1,4 +1,4 @@
-# [Longest Uncommon Subsequence I ][title]
+# [Longest Uncommon Subsequence I][title]
 
 ## Description
 
@@ -18,7 +18,6 @@ exist, return -1.
 
 **Example 1:**
 
-
 ```
 Input: "aba", "cdc"
 Output: 3
@@ -29,9 +28,8 @@ but not a subsequence of any other strings in the group of two strings.
 
 **Note:**
 
-  1. Both strings' lengths will not exceed 100.
-  2. Only letters from a ~ z will appear in input strings.
-
+1. Both strings' lengths will not exceed 100.
+2. Only letters from a ~ z will appear in input strings.
 
 **Tags:** String
 
@@ -46,7 +44,7 @@ class Solution {
     public int findLUSlength(String a, String b) {
         if(a.equals(b)) {
             return -1;
-        } 
+        }
         return Math.max(a.length(), b.length());
     }
 }

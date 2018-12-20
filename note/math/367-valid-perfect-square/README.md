@@ -10,17 +10,23 @@ is a perfect square else False.
 **Example 1:**
 
     
-    
-    **Input:** 16
-    **Output:** true
+    
+
+Input: 16
+
+Output: true
+
     
 
 **Example 2:**
 
     
-    
-    **Input:** 14
-    **Output:** false
+    
+
+Input: 14
+
+Output: false
+
     
 
 

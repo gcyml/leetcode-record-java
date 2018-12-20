@@ -8,9 +8,7 @@ Given a **non-empty** array of integers, return the **third** maximum number in 
 
 ```
 Input: [3, 2, 1]
-
 Output: 1
-
 Explanation: The third maximum is 1.
 ```
 
@@ -18,9 +16,7 @@ Explanation: The third maximum is 1.
 
 ```
 Input: [1, 2]
-
 Output: 2
-
 Explanation: The third maximum does not exist, so the maximum (2) is returned instead.
 ```
 
@@ -28,9 +24,7 @@ Explanation: The third maximum does not exist, so the maximum (2) is returned in
 
 ```
 Input: [2, 2, 3, 1]
-
 Output: 1
-
 Explanation: Note that the third maximum here means the third maximum distinct number.
 Both numbers with value 2 are both considered as second maximum.
 ```
@@ -63,6 +57,5 @@ class Solution {
     }
 }
 ```
-
 
 [title]: https://leetcode.com/problems/remove-duplicates-from-sorted-array

@@ -16,10 +16,7 @@ in S.
 
 Return the number of groups of special-equivalent strings from `A`.
 
-
-
 **Example 1:**
-
 
 ```
 Input: ["a","b","c","a","c","c"]
@@ -29,7 +26,6 @@ Explanation: 3 groups ["a","a"], ["b"], ["c","c","c"]
 
 **Example 2:**
 
-
 ```
 Input: ["aa","bb","ab","ba"]
 Output: 4
@@ -37,7 +33,6 @@ Explanation: 4 groups ["aa"], ["bb"], ["ab"], ["ba"]
 ```
 
 **Example 3:**
-
 
 ```
 Input: ["abc","acb","bac","bca","cab","cba"]
@@ -47,28 +42,25 @@ Explanation: 3 groups ["abc","cba"], ["acb","bca"], ["bac","cab"]
 
 **Example 4:**
 
-
 ```
 Input: ["abcd","cdab","adcb","cbad"]
 Output: 1
 Explanation: 1 group ["abcd","cdab","adcb","cbad"]
 ```
 
-
-
 **Note:**
 
-  * `1 <= A.length <= 1000`
-  * `1 <= A[i].length <= 20`
-  * All `A[i]` have the same length.
-  * All `A[i]` consist of only lowercase letters.
-
+* `1 <= A.length <= 1000`
+* `1 <= A[i].length <= 20`
+* All `A[i]` have the same length.
+* All `A[i]` consist of only lowercase letters.
 
 **Tags:** String
 
 **Difficulty:** Easy
 
 ## 思路
+
 strHash函数,传一个字符串,返回该字符串的奇数位字符和偶数位字符出现的在字母表中的分布
 构造一个set来存储每个字符串的strHash后的结果
 

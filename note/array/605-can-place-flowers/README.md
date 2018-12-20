@@ -17,6 +17,7 @@ Output: False
 ```
 
 **Note:**
+
 1. The input array won't violate no-adjacent-flowers rule.
 2. The input array size is in the range of [1, 20000].
 3. **n** is a non-negative integer which won't exceed the input array size.
@@ -60,7 +61,5 @@ class Solution {
     }
 }
 ```
-
-
 
 [title]: https://leetcode.com/problems/can-place-flowers

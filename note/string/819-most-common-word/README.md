@@ -10,10 +10,7 @@ Words in the list of banned words are given in lowercase, and free of
 punctuation.  Words in the paragraph are not case sensitive.  The answer is in
 lowercase.
 
-
-
 **Example:**
-
 
 ```
 Input:
@@ -28,8 +25,6 @@ that punctuation is ignored (even if adjacent to words, such as "ball,"),
 and that "hit" isn't the answer even though it occurs more because it is banned.
 ```
 
-
-
 **Note:**
 
 * `1 <= paragraph.length <= 1000`.
@@ -39,7 +34,6 @@ and that "hit" isn't the answer even though it occurs more because it is banned.
 * `paragraph` only consists of letters, spaces, or the punctuation symbols `!?',;.`
 * There are no hyphens or hyphenated words.
 * Words only consist of letters, never apostrophes or other punctuation symbols.
-
 
 **Tags:** String
 
@@ -79,7 +73,7 @@ class Solution {
                 max = count.get(s);
                 res = s;
             }
-		}
+        }
         return res;
     }
 }

@@ -26,7 +26,6 @@ Explanation: There is no common prefix among the input strings.
 
 All given inputs are in lowercase letters `a-z`.
 
-
 **Tags:** String
 
 **Difficulty:** Easy
@@ -46,7 +45,7 @@ class Solution {
         for (int i = 1; i < strs.length; i++)
             while(strs[i].indexOf(pre) != 0)
                 pre = pre.substring(0, pre.length()-1);
-        return pre;       
+        return pre;
     }
 }
 ```

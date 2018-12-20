@@ -10,15 +10,10 @@ Every element of the array should be a **character** (not int) of length 1.
 
 After you are done **modifying the input array[in-place](https://en.wikipedia.org/wiki/In-place_algorithm)** , return the new length of the array.
 
-
-
 **Follow up:**
 Could you solve it using only O(1) extra space?
 
-
-
 **Example 1:**
-
 
 ```
 Input:
@@ -31,10 +26,7 @@ Explanation:
  "aa" is replaced by "a2". "bb" is replaced by "b2". "ccc" is replaced by "c3".
 ```
 
-
-
 **Example 2:**
-
 
 ```
 Input:
@@ -47,10 +39,7 @@ Explanation:
 Nothing is replaced.
 ```
 
-
-
 **Example 3:**
-
 
 ```
 Input:
@@ -64,12 +53,10 @@ Since the character  "a" does not repeat, it is not compressed. "bbbbbbbbbbbb" i
 Notice each digit has it's own entry in the array.
 ```
 
-
 **Note:**
 
-  1. All characters have an ASCII value in `[35, 126]`.
-  2. `1 <= len(chars) <= 1000`.
-
+1. All characters have an ASCII value in `[35, 126]`.
+2. `1 <= len(chars) <= 1000`.
 
 **Tags:** String
 
@@ -85,7 +72,7 @@ class Solution {
         if(chars.length == 0) {
             return 0;
         }
-        int mark = 0;       
+        int mark = 0;
         int write = 0;
         for(int i = 0; i < chars.length; i++){
             if(i == chars.length-1 || chars[i] != chars[i+1] ) {
@@ -100,7 +87,6 @@ class Solution {
             }
         }
         return write;
-        
     }
 }
 ```

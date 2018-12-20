@@ -10,7 +10,6 @@ mapping relationship between the string and the original binary tree.
 
 **Example 1:**
 
-
 ```
 Input: Binary tree: [1,2,3,4]
            1
@@ -27,7 +26,6 @@ And it will be "1(2(4))(3)".
 
 **Example 2:**
 
-
 ```
 Input: Binary tree: [1,2,3,null,4]
            1
@@ -41,7 +39,6 @@ Output: "1(2()(4))(3)"
 Explanation: Almost the same as the first example,
 except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.
 ```
-
 
 **Tags:** String, Tree
 
@@ -70,7 +67,6 @@ class Solution {
         helper(t);
         String res = sb.toString();
         return res.substring(1, res.length()-1);
-        
     }
     void helper(TreeNode t){
         if(t == null){

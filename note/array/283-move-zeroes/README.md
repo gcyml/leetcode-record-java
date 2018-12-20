@@ -40,5 +40,4 @@ class Solution {
 }
 ```
 
-
 [title]: https://leetcode.com/problems/move-zeroes
