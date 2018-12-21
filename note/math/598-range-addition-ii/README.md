@@ -2,16 +2,11 @@
 
 ## Description
 
-Given an m * n matrix **M** initialized with all **0** 's and several update
-operations.
+Given an m * n matrix **M** initialized with all **0** 's and several update operations.
 
-Operations are represented by a 2D array, and each operation is represented by
-an array with two **positive** integers **a** and **b** , which means
-**M[i][j]** should be **added by one** for all **0 <= i < a** and **0 <= j <
-b**.
+Operations are represented by a 2D array, and each operation is represented by an array with two **positive** integers **a** and **b** , which means **M[i][j]** should be **added by one** for all **0 <= i < a** and **0 <= j < b**.
 
-You need to count and return the number of maximum integers in the matrix
-after performing all the operations.
+You need to count and return the number of maximum integers in the matrix after performing all the operations.
 
 **Example 1:**  
 
@@ -48,5 +43,25 @@ So the maximum integer in M is 2, and there are four of it in M. So return 4.
 **Tags:** Math
 
 **Difficulty:** Easy
+
+## 思路
+
+由于每次操作都是行从 0 到 a 累加，列从 0 到 b。每次操作都会累加的行必然是0 到 $min_a$，每次都会累加的列也必然是 0 到 $min_b$。因此最大值个数为 $min_a * min_b$ 。
+
+``` java
+class Solution {
+    public int maxCount(int m, int n, int[][] ops) {
+        if(ops.length == 0){
+            return m*n;
+        }
+        int minA = Integer.MAX_VALUE, minB = Integer.MAX_VALUE;
+        for(int i = 0;i<ops.length;i++) {
+            minA = Math.min(ops[i][0], minA);
+            minB = Math.min(ops[i][1], minB);
+        }
+        return minA * minB;
+    }
+}
+```
 
 [title]: https://leetcode.com/problems/range-addition-ii

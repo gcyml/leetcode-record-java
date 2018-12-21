@@ -13,7 +13,6 @@ integer.
 
 **Example 1:**
 
-
 ```
 n = 5
 
@@ -24,7 +23,6 @@ The coins can form the following rows:
 
 Because the 3rd row is incomplete, we return 2.
 ```
-
 
 **Example 2:**
 
@@ -43,5 +41,24 @@ Because the 4th row is incomplete, we return 3.
 **Tags:** Math, Binary Search
 
 **Difficulty:** Easy
+
+## 思路
+
+解法是每上一层都算出剩余的硬币数，若剩余硬币数不超过下一层可放满的硬币数 `k`时，则此时 `k-1` 即为完整阶梯行的总行数。
+
+``` java
+class Solution {
+    public int arrangeCoins(int n) {
+        if(n < 2) {
+            return n;
+        }
+        int k = 1;
+        while(n>=k) {
+            n -= k++;
+        }
+        return k-1;
+    }
+}
+```
 
 [title]: https://leetcode.com/problems/arranging-coins
