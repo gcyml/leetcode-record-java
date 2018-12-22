@@ -2,8 +2,7 @@
 
 ## Description
 
-You have a list of points in the plane. Return the area of the largest
-triangle that can be formed by any 3 of the points.
+You have a list of points in the plane. Return the area of the largest triangle that can be formed by any 3 of the points.
 
 **Example:**
 
@@ -26,5 +25,28 @@ The five points are show in the figure below. The red triangle is the largest.
 **Tags:** Math
 
 **Difficulty:** Easy
+
+## 思路
+
+题意是给出一个二位矩阵，返回矩阵中由三个点组成的面积最大的三角形。暴力破解大法好。
+
+``` java
+class Solution {
+    public double largestTriangleArea(int[][] points) {
+        double max = Integer.MIN_VALUE;
+        for(int i = 0;i<points.length;i++) {
+            for(int j = 0;j<points.length;j++) {
+                for(int k = 0;k<points.length;k++) {
+                    max = Math.max(max, triangleArea(points[i][0], points[i][1], points[j][0], points[j][1], points[k][0], points[k][1]));
+                }
+            }
+        }
+        return max;
+    }
+    double triangleArea(int x1, int y1, int x2, int y2, int x3, int y3) {
+        return 0.5 * Math.abs((x2 * y3 - x3 * y2) - (x1 * y3 - x3 * y1) + (x1 * y2 - x2 * y1));
+    }
+}
+```
 
 [title]: https://leetcode.com/problems/largest-triangle-area

@@ -2,11 +2,9 @@
 
 ## Description
 
-You are standing at position `0` on an infinite number line. There is a goal
-at position `target`.
+You are standing at position `0` on an infinite number line. There is a goal at position `target`.
 
-On each move, you can either go left or right. During the _n_ -th move
-(starting from 1), you take _n_ steps.
+On each move, you can either go left or right. During the _n_ -th move (starting from 1), you take _n_ steps.
 
 Return the minimum number of steps required to reach the destination.
 
@@ -38,5 +36,31 @@ On the third move we step from -1 to 2.
 **Tags:** Math
 
 **Difficulty:** Easy
+
+## 思路
+
+题意是在
+
+``` java
+class Solution {
+    public int reachNumber(int target) {
+        target = Math.abs(target);
+        int sum = 0;
+        int n   = 0;
+        while (sum < target){
+            n ++;
+            sum += n;
+        }
+        if (sum == target) return n;
+        int res = sum - target;
+        if ((res & 1) == 0) {
+            return n;
+        }
+        else {
+            return n + ((n & 1) == 0 ? 1 : 2);
+        }
+    }
+}
+```
 
 [title]: https://leetcode.com/problems/reach-a-number

@@ -2,8 +2,7 @@
 
 ## Description
 
-Given a positive integer `N`, find and return the longest distance between two
-consecutive 1's in the binary representation of `N`.
+Given a positive integer `N`, find and return the longest distance between two consecutive 1's in the binary representation of `N`.
 
 If there aren't two consecutive 1's, return 0.
 
@@ -55,5 +54,28 @@ There aren 't any consecutive pairs of 1's in the binary representation of 8, so
 **Tags:** Math
 
 **Difficulty:** Easy
+
+## 思路
+
+题意是给定一个正整数 N，找到并返回 N 的二进制表示中两个连续的 1 之间的最长距离。解法是要遍历 N 的每个二进制位，创建两个变量，需要存入当前的位置 `curIndex`，以及上一个 1 的位置 `lastOne`（初始化为 -1，若为 -1 则说明尚未遍历到有 1 存在）。若当前位为 1，由创建的两个变量得到距离，并更新 `max` 值以及 `lastOne`。
+
+``` java
+class Solution {
+    public int binaryGap(int N) {
+        int cmp = 1;
+        int curIndex = 0, dist = 0, lastOne = -1, res = 0;
+        while(cmp <= N) {
+            if((cmp & N) != 0) {
+                dist = lastOne != -1?curIndex-lastOne:0;
+                lastOne = curIndex;
+                res = Math.max(dist, res);
+            }
+            cmp = cmp << 1;
+            curIndex++;
+        }
+        return res;
+    }
+}
+```
 
 [title]: https://leetcode.com/problems/binary-gap
