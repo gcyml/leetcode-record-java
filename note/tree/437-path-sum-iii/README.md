@@ -12,21 +12,23 @@ The tree has no more than 1,000 nodes and the values are in the range -1,000,000
 
 **Example:**
 
-    root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8
+```
+root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8
 
-          10
-         /  \
-        **5**   **-3**
-       **/** **\**    **\**
-      **3**   **2**   **11**
-     / \   **\**
-    3  -2   **1**
+      10
+     /  \
+    5   -3
+   / \    \
+  3   2   11
+ / \   \
+3  -2   1
 
-    Return 3. The paths that sum to 8 are:
+Return 3. The paths that sum to 8 are:
 
-    1.  5 -> 3
-    2.  5 -> 2 -> 1
-    3. -3 -> 11
+1.  5 -> 3
+2.  5 -> 2 -> 1
+3. -3 -> 11
+```
 
 **Tags:** Tree
 
@@ -55,7 +57,6 @@ class Solution {
         }
         int cur = pre + root.val;
         return (cur == sum? 1: 0) + helper(root.left, cur, sum) + helper(root.right, cur, sum);
-        
     }
 }
 ```

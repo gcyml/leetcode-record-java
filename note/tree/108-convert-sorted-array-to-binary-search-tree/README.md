@@ -8,21 +8,25 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 
 **Example:**
 
-    Given the sorted array: [-10,-3,0,5,9],
+```
+Given the sorted array: [-10,-3,0,5,9],
 
-    One possible answer is: [0,-3,9,-10,null,5], which represents the following height balanced BST:
+One possible answer is: [0,-3,9,-10,null,5], which represents the following height balanced BST:
 
-          0
-         / \
-       -3   9
-       /   /
-     -10  5
+      0
+     / \
+   -3   9
+   /   /
+ -10  5
+```
 
 **Tags:** Tree, Depth-first Search
 
 **Difficulty:** Easy
 
 ## 思路
+
+题意是将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。要使得二叉树高度差不超过 1，就要在构建二叉树时，保证左右子树的节点总数尽量相等。这里用了二分法，每次构建时把数值分成两部分构建子树。
 
 ``` java
 /**
@@ -38,7 +42,6 @@ class Solution {
    public TreeNode sortedArrayToBST(int[] nums) {
         return buildTree(nums, 0, nums.length - 1);
     }
-    
     private TreeNode buildTree(int[] num, int start, int end) {
         if (start > end) {
             return null;

@@ -42,12 +42,14 @@ Input:     1         1
 Output: false
 ```
 
-
 **Tags:** Tree, Depth-first Search
 
 **Difficulty:** Easy
 
 ## 思路
+
+判断二叉树是否相等。
+这题用逐层递归的方法解决，先判断两个节点是否相等，而后再递归判断两个节点的左节点和右节点。
 
 ``` java
 /**

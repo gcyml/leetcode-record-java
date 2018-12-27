@@ -12,15 +12,19 @@ Given binary search tree:  root = [6,2,8,0,4,7,9,null,null,3,5]
 
 **Example 1:**
 
-    Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
-    Output: 6
-    Explanation: The LCA of nodes 2 and 8 is 6.
+```
+Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
+Output: 6
+Explanation: The LCA of nodes 2 and 8 is 6.
+```
 
 **Example 2:**
 
-    Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
-    Output: 2
-    Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+```
+Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
+Output: 2
+Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+```
 
 **Note:**
 
@@ -32,6 +36,10 @@ Given binary search tree:  root = [6,2,8,0,4,7,9,null,null,3,5]
 **Difficulty:** Easy
 
 ## 思路
+
+题意是给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。
+
+由于是二叉搜索树，若节点值大于给定范围的上限，则其节点必然在最近公共祖先的右侧；若节点值小于给定范围的下限，则其节点必然在最近公共祖先的左侧。由此，可通过不断向下递归，直到节点值在两个节点的范围内，此时则为结果节点。
 
 ``` java
 /**
@@ -56,7 +64,6 @@ class Solution {
         } else if(root.val < left) {
             return helper(root.right, left, right);
         }
-        // è¦ä¹ä¸¤å¼å¨å·¦å³å­æ ï¼è¦ä¹å¼ä¹ä¸ä¸ºæ ¹
         return root;
     }
 }

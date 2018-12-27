@@ -12,20 +12,23 @@ The maximum depth is the number of nodes along the longest path from the root no
 
 Given binary tree `[3,9,20,null,null,15,7]`,
 
-        3
-       / \
-      9  20
-        /  \
-       15   7
+```
+    3
+   / \
+  9  20
+    /  \
+   15   7
+```
 
 return its depth = 3.
-
 
 **Tags:** Tree, Depth-first Search
 
 **Difficulty:** Easy
 
 ## 思路
+
+题意是找出二叉树的最大深度。用递归实现，递归左右子树，得到最大值，空节点深度为 0，逐层向上，最后得到的即是最大深度。
 
 ``` java
 /**

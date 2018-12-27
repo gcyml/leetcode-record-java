@@ -33,6 +33,8 @@ Bonus points if you could solve it both recursively and iteratively.
 
 ## 思路
 
+题意是给定一个二叉树，检查它是否是镜像对称的。要判断二叉树是否对称，则左子树的左叶和右子树的右叶，以及左子树的右叶和右子树的左叶相等。按照这个思路，来逐级递归实现。
+
 ``` java
 /**
  * Definition for a binary tree node.
