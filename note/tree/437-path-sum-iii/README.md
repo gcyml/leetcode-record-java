@@ -36,6 +36,8 @@ Return 3. The paths that sum to 8 are:
 
 ## 思路
 
+这一题和 112 的区别在于不限起始节点和结束节点。可以用递归的方法，以当前节点为起点，不限终点，找出符合条件的路径。而后再向下递归，找出以左子树为起点和右子树为起点，同理。最后的路径总和数即为结果。
+
 ``` java
 /**
  * Definition for a binary tree node.
