@@ -7,26 +7,28 @@ return NULL.
 
 For example,
 
-    Given the tree:
-            4
-           / \
-          2   7
-         / \
-        1   3
+```
+Given the tree:
+        4
+       / \
+      2   7
+     / \
+    1   3
 
-    And the value to search: 2
-
+And the value to search: 2
+```
 
 You should return this subtree:
 
-          2
-         / \
-        1   3
+```
+      2
+     / \
+    1   3
+```
 
 In the example above, if we want to search the value `5`, since there is no node with value `5`, we should return `NULL`.
 
 Note that an empty tree is represented by `NULL`, therefore you would see the expected output (serialized tree format) as `[]`, not `null`.
-
 
 **Tags:** Tree
 

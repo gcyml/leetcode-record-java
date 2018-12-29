@@ -12,28 +12,37 @@ edges between them.
 
 Input:
 
-                  5
-                 / \
-                4   5
-               / \   \
-              1   1   5
+```
+              5
+             / \
+            4   5
+           / \   \
+          1   1   5
+```
 
 Output:
 
-    2
+```
+2
+```
 
 **Example 2:**
 
 Input:
-                  1
-                 / \
-                4   5
-               / \   \
-              4   4   5
+
+```
+              1
+             / \
+            4   5
+           / \   \
+          4   4   5
+```
 
 Output:
 
-    2
+```
+2
+```
 
 **Note:** The given binary tree has not more than 10000 nodes. The height of the tree is not more than 1000.
 

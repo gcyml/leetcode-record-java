@@ -1,0 +1,23 @@
+class Solution {
+    int[][] image;
+    public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
+        this.image = image;
+        if(image[sr][sc] != newColor) {
+            helper(sr, sc, image[sr][sc], newColor);        
+        }
+        return this.image;
+    }
+    public void helper(int col, int row, int oldColor, int newColor) {
+        if(col < 0 || col >= image.length || row <0 ||row >= image[0].length){
+            return;
+        }        
+        if(image[col][row] == oldColor) {
+            image[col][row] = newColor;
+            helper(col-1, row, oldColor, newColor);
+            helper(col+1, row, oldColor, newColor);
+            helper(col, row-1, oldColor, newColor);
+            helper(col, row+1, oldColor, newColor);
+        }
+        
+    }
+}

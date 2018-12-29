@@ -1,0 +1,42 @@
+class Solution {
+    public int robotSim(int[] commands, int[][] obstacles) {
+        int[][] dir = {{0,1},{1,0},{0,-1},{-1,0}};
+        int angle = 0;
+        int x = 0, y = 0;
+        int max = 0;
+        HashSet<Long> obstacleSet = new HashSet<>(); 
+        for (int[] obstacle: obstacles) {
+            long ox = (long) obstacle[0];
+            long oy = (long) obstacle[1];
+            obstacleSet.add((ox << 16) + oy);//å16ä½è®°å½xçä½ç½®ï¼å16ä½è®°å½yçä½ç½®
+        }
+        for(int command : commands) {
+            if(command == -1) {
+                angle = (angle+1)%4;
+                switch(command) {
+                    case -1:
+                       
+                        break;
+                    case -2:
+                       
+                        break;
+                }
+            } else if(command == -2) {
+                angle = (angle-1+4)%4;
+            } else {
+                for(int i=0;i<command;i++) {
+                    int nx = x + dir[angle][0];
+                    int ny = y + dir[angle][1];
+                    long code = (nx << 16) + ny;
+                    if(!obstacleSet.contains(code)) {
+                        x = nx;
+                        y = ny;
+                        max = Math.max(max, x*x + y*y);
+                    }
+                }
+              
+            }
+        }
+        return max;
+    }
+}

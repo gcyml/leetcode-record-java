@@ -10,25 +10,29 @@ If no such second minimum value exists, output -1 instead.
 
 **Example 1:**  
 
-    Input:
-        2
-       / \
-      2   5
-         / \
-        5   7
+```
+Input:
+    2
+   / \
+  2   5
+     / \
+    5   7
 
-    Output: 5
-    Explanation: The smallest value is 2, the second smallest value is 5.
+Output: 5
+Explanation: The smallest value is 2, the second smallest value is 5.
+```
 
 **Example 2:**  
 
-    Input:
-        2
-       / \
-      2   2
+```
+Input:
+    2
+   / \
+  2   2
 
-    Output: -1
-    Explanation: The smallest value is 2, but there isn't any second smallest value.
+Output: -1
+Explanation: The smallest value is 2, but there isn't any second smallest value.
+```
 
 **Tags:** Tree
 

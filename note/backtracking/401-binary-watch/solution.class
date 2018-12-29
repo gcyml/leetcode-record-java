@@ -1,0 +1,21 @@
+class Solution {
+    List<String> result = new ArrayList<>(); 
+    public List<String> readBinaryWatch(int num) {
+        backtrack(num, 0, 0);   
+        return result;
+    }
+    public void backtrack(int num, int ans, int curPos) {
+        if(num == 0) {
+            int h = ans >> 6;
+            int m = ans & 0x3f; 
+            if(h < 12 && m < 60) {
+                result.add(String.format("%d:%02d", h, m));
+            }    
+        }
+        else if(curPos < 10) {
+                 backtrack(num-1, ans | (1 << curPos), curPos +1);
+                backtrack(num, ans, curPos+1);
+           
+        }
+    }
+}

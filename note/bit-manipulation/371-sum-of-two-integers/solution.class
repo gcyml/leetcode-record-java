@@ -1,0 +1,8 @@
+class Solution {
+    public int getSum(int a, int b) {
+        if (b == 0) return a;
+        int sum = a ^ b; // ä¸å¸¦è¿ä½çå 
+        int carry = (a & b) << 1; // è¿ä½åæ°
+        return getSum(sum, carry);
+    }
+}
