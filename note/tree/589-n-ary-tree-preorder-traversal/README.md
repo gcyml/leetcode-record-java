@@ -20,6 +20,8 @@ Recursive solution is trivial, could you do it iteratively?
 
 ## 思路
 
+n 叉树的前序遍历实现。用递归，先添加结点值，而后遍历子树。
+
 ``` java
 /*
 // Definition for a Node.
@@ -47,9 +49,7 @@ class Solution {
         for(Node child : root.children) {
             helper(child);
         }
-        
     }
-    
 }
 ```
 

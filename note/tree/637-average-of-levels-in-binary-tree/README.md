@@ -6,15 +6,17 @@ Given a non-empty binary tree, return the average value of the nodes on each lev
 
 **Example 1:**  
 
-    Input:
-        3
-       / \
-      9  20
-        /  \
-       15   7
-    Output: [3, 14.5, 11]
-    Explanation:
-    The average value of nodes on level 0 is 3,  on level 1 is 14.5, and on level 2 is 11. Hence return [3, 14.5, 11].
+```
+Input:
+    3
+   / \
+  9  20
+    /  \
+   15   7
+Output: [3, 14.5, 11]
+Explanation:
+The average value of nodes on level 0 is 3,  on level 1 is 14.5, and on level 2 is 11. Hence return [3, 14.5, 11].
+```
 
 **Note:**  
 
@@ -25,6 +27,8 @@ Given a non-empty binary tree, return the average value of the nodes on each lev
 **Difficulty:** Easy
 
 ## 思路
+
+题意是返回二叉树中每一层的平均值。既然是求每一层，自然是用 BFS。这里用了队列来实现广度优先搜索。计算每层总和，每层遍历结束时，计算平均值。
 
 ``` java
 /**

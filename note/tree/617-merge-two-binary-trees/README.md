@@ -11,21 +11,22 @@ Otherwise, the NOT null node will be used as the node of new tree.
 
 **Example 1:**
 
-    Input:
-    	Tree 1                     Tree 2                  
-              1                         2                             
-             / \                       / \                            
-            3   2                     1   3                        
-           /                           \   \                      
-          5                             4   7                  
-    Output: 
-    Merged tree:
-    	     3
-    	    / \
-    	   4   5
-    	  / \   \ 
-    	 5   4   7
-
+```
+Input:
+	Tree 1                     Tree 2                  
+          1                         2                             
+         / \                       / \                            
+        3   2                     1   3                        
+       /                           \   \                      
+      5                             4   7                  
+Output: 
+Merged tree:
+	     3
+	    / \
+	   4   5
+	  / \   \
+	 5   4   7
+```
 
 **Note:** The merging process must start from the root nodes of both trees.
 
@@ -34,6 +35,8 @@ Otherwise, the NOT null node will be used as the node of new tree.
 **Difficulty:** Easy
 
 ## 思路
+
+合并二叉树。后序遍历递归即可。
 
 ``` java
 /**
@@ -53,10 +56,8 @@ class Solution {
             t1.val = t1.val + t2.val;
             return t1;
         } else if(t1 == null) {
-            // System.out.println(t2.val);
             return t2;
         } else if(t2 == null) {
-            // System.out.println(t1.val);
             return t1;
         }
         return null;

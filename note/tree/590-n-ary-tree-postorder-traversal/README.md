@@ -20,6 +20,8 @@ Recursive solution is trivial, could you do it iteratively?
 
 ## 思路
 
+n 叉树的后序遍历实现。用递归，先遍历子树，而后添加结点值。
+
 ``` java
 /*
 // Definition for a Node.
@@ -48,7 +50,6 @@ class Solution {
         }
         res.add(root.val);
     }
-    
 }
 ```
 

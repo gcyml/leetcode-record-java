@@ -17,12 +17,13 @@ We should return its max depth, which is 3.
 1. The depth of the tree is at most `1000`.
 2. The total number of nodes is at most `5000`.
 
-
 **Tags:** Tree, Depth-first Search, Breadth-first Search
 
 **Difficulty:** Easy
 
 ## 思路
+
+题意是找出 n 叉树的最大深度。最大深度自然要用 DFS 来做，逐层向上返回最大深度，而后 +1。
 
 ``` java
 /*
@@ -48,7 +49,6 @@ class Solution {
     }
     public int helper(int depth, Node root) {
         depth += 1;
-        // System.out.println(root.val + "," + depth);
         int max = depth;
         for(Node node : root.children) {
             max = Math.max(helper(depth, node), max);
