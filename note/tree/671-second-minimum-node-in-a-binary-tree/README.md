@@ -40,6 +40,8 @@ Explanation: The smallest value is 2, but there isn't any second smallest value.
 
 ## 思路
 
+根据题意，节点值不大于子节点的值。因此根节点必然是最小值。知道了最小值，递归遍历找出第二小的值即可。
+
 ``` java
 /**
  * Definition for a binary tree node.
@@ -51,21 +53,20 @@ Explanation: The smallest value is 2, but there isn't any second smallest value.
  * }
  */
 class Solution {
-    int min = Integer.MAX_VALUE;
+    int second = Integer.MAX_VALUE;
     public int findSecondMinimumValue(TreeNode root) {
         helper(root, root.val);
-        return min == Integer.MAX_VALUE?-1:min;
+        return second == Integer.MAX_VALUE?-1:second;
     }
     void helper(TreeNode root, int val) {
-        if(root.left == null && root.right == null) {
-            if(root.val > val) {
-                min = Math.min(root.val, min);
-            }
-        } else {
-            helper(root.left, val);
-            helper(root.right, val);
+        if(root == null) {
+            return;
         }
-      
+        if(root.val > val && second > root.val) {
+            second = root.val;
+        }
+        helper(root.left, val);
+        helper(root.right, val);
     }
 }
 ```

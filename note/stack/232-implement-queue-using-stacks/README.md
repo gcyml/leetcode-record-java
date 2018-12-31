@@ -4,26 +4,38 @@
 
 Implement the following operations of a queue using stacks.
 
-  * push(x) -- Push element x to the back of queue.
-  * pop() -- Removes the element from in front of queue.
-  * peek() -- Get the front element.
-  * empty() -- Return whether the queue is empty.
+* push(x) -- Push element x to the back of queue.
+* pop() -- Removes the element from in front of queue.
+* peek() -- Get the front element.
+* empty() -- Return whether the queue is empty.
 
 **Example:**
-            MyQueue queue = new MyQueue();        queue.push(1);    queue.push(2);      queue.peek();  // returns 1    queue.pop();   // returns 1    queue.empty(); // returns false
+
+```
+MyQueue queue = new MyQueue();
+    
+queue.push(1);
+queue.push(2);  
+queue.peek();  // returns 1
+queue.pop();   // returns 1
+queue.empty(); // returns false
+```
 
 **Notes:**
 
-  * You must use _only_ standard operations of a stack -- which means only `push to top`, `peek/pop from top`, `size`, and `is empty` operations are valid.
-  * Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.
-  * You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
-
+* You must use _only_ standard operations of a stack -- which means only `push to top`, `peek/pop from top`, `size`, and `is empty` operations are valid.
+* Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.
+* You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
 
 **Tags:** Stack, Design
 
 **Difficulty:** Easy
 
 ## 思路
+
+用栈实现队列。
+
+用两个栈来实现队列的“先进先出”的特性。由于队头对应的是栈的栈底，需要把栈底上的对象弹出才能得到，需要一个备用栈来暂存数据。
 
 ``` java
 class MyQueue {

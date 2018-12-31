@@ -36,6 +36,8 @@ Note that an empty tree is represented by `NULL`, therefore you would see the ex
 
 ## 思路
 
+题目是二叉搜索树的查找。
+
 ``` java
 /**
  * Definition for a binary tree node.

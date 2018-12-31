@@ -22,6 +22,8 @@ Return `true` if and only if the two given trees with head nodes `root1` and `ro
 
 ## 思路
 
+两棵树做 DFS，记录叶子到列表中，若两个列表大小相同，且值均对应相等，则为真。
+
 ``` java
 /**
  * Definition for a binary tree node.
@@ -44,10 +46,8 @@ class Solution {
             if(list1.get(i) != list2.get(i)) {
                 return false;
             }
-            
         }
         return true;
-        
     }
     public void helper(List<Integer> list, TreeNode root) {
         if(root != null) {

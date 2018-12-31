@@ -49,6 +49,8 @@ Output: [1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9]
 
 ## 思路
 
+解法是把先把所有节点按中序遍历遍历添加到列表，然后遍历列表，重新生成一棵新的树。
+
 ``` java
 /**
  * Definition for a binary tree node.
