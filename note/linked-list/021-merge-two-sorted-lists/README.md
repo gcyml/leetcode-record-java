@@ -2,18 +2,22 @@
 
 ## Description
 
-Merge two sorted linked lists and return it as a new list. The new list should
-be made by splicing together the nodes of the first two lists.
+Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
 **Example:**
-            Input: 1->2->4, 1->3->4    Output: 1->1->2->3->4->4    
 
+```
+Input: 1->2->4, 1->3->4
+Output: 1->1->2->3->4->4
+```
 
 **Tags:** Linked List
 
 **Difficulty:** Easy
 
 ## 思路
+
+题意是合并两个有序链表。比较两个节点值，若 l1.val 小于等于 l2.val，则把 l1 后面的节点和 l2 做合并后，再接入到 l1 的尾部。否则，做相反操作。
 
 ``` java
 /**

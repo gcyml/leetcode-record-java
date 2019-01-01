@@ -2,21 +2,30 @@
 
 ## Description
 
-Given a sorted linked list, delete all duplicates such that each element
-appear only _once_.
+Given a sorted linked list, delete all duplicates such that each element appear only _once_.
 
 **Example 1:**
-            Input: 1- >1->2    Output: 1- >2    
+
+```
+Input: 1- >1->2
+Output: 1- >2
+```
 
 **Example 2:**
-            Input: 1- >1->2->3->3    Output: 1- >2->3    
 
+```
+    Input: 1- >1->2->3->3
+    Output: 1- >2->3
+```
 
 **Tags:** Linked List
 
 **Difficulty:** Easy
 
 ## 思路
+
+题意是给定一个有序链表，删除重复元素。
+解法是遍历每一个节点，若当前节点的下一节点和当前节点值相同，则把 next 指向 next.next，循环直到不再相同为止。
 
 ``` java
 /**
@@ -36,7 +45,6 @@ class Solution {
                 nextNode = nextNode.next;
             }
             curNode.next = nextNode;
-            
             curNode = nextNode;
         }
         return head;

@@ -92,7 +92,7 @@ class Solution {
 
 另一种方法是用数组存入所有有效得分。最后再遍历数组算出总分。
 
-```
+``` java
 class Solution {
     public int calPoints(String[] ops) {
         int len = ops.length;
@@ -110,11 +110,9 @@ class Solution {
             } else 
                 scores[next++] = Integer.parseInt(s);
         }
-        
         int sum = 0;
         for (int i = 0; i < next; i++)
             sum += scores[i];
-        
         return sum;
     }
 }
