@@ -3,8 +3,7 @@
 ## Description
 
 Given an integer, write an algorithm to convert it to hexadecimal. For
-negative integer, [two’s
-complement](https://en.wikipedia.org/wiki/Two%27s_complement) method is used.
+negative integer, [two’s complement](https://en.wikipedia.org/wiki/Two%27s_complement) method is used.
 
 **Note:**
 
@@ -14,17 +13,34 @@ complement](https://en.wikipedia.org/wiki/Two%27s_complement) method is used.
   4. You **must not use _any_ method provided by the library** which converts/formats the number to hex directly.
 
 **Example 1:**
-            Input:    26        Output:    "1a"    
+
+```
+Input:
+26
+
+Output:
+"1a"
+```
 
 **Example 2:**
-            Input:    -1        Output:    "ffffffff"    
 
+```
+Input:
+-1
+
+Output:
+"ffffffff"
+```
 
 **Tags:** Bit Manipulation
 
 **Difficulty:** Easy
 
 ## 思路
+
+题意是把数转成十六进制字符串。
+
+解法是循环对数按位右移 4 位，取出低四位 t，`t = num & 0xf`，把 t 转成 16 进制字符。拼接所有字符即可。
 
 ``` java
 class Solution {

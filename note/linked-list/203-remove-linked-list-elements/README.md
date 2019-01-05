@@ -33,7 +33,6 @@ class Solution {
         if(head == null) {
             return head;
         }
- 
         ListNode res = head;
         while(head != null) {
             while(head.next != null && head.next.val == val) {

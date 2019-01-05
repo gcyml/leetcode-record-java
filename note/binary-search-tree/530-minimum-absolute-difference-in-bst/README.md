@@ -2,23 +2,35 @@
 
 ## Description
 
-Given a binary search tree with non-negative values, find the minimum
-[absolute difference](https://en.wikipedia.org/wiki/Absolute_difference)
-between values of any two nodes.
+Given a binary search tree with non-negative values, find the minimum [absolute difference](https://en.wikipedia.org/wiki/Absolute_difference) between values of any two nodes.
 
 **Example:**
-            Input:           1        \         3        /       2        Output:    1        Explanation:    The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).    
 
+```
+Input:
 
+   1
+    \
+     3
+    /
+   2
+
+Output:
+1
+
+Explanation:
+The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).
+```
 
 **Note:** There are at least two nodes in this BST.
-
 
 **Tags:** Binary Search Tree
 
 **Difficulty:** Easy
 
 ## 思路
+
+二叉搜索树找出最小绝对值差。由于二叉搜索树中序遍历即为正序排序，因此对二叉树做中序遍历，全局变量 prev 表示前一次遍历的值，也是当前结点排序中的前一个值，比较两个值的差，找出最小绝对值即可。
 
 ``` java
 /**
@@ -37,7 +49,6 @@ class Solution {
         helper(root);
         return ans;
     }
-    //  äºåæç´¢æ çä¸­åºéåå³å¯æåº
     public void helper(TreeNode node) {
         if(node == null) {
             return;
@@ -46,7 +57,6 @@ class Solution {
         if(prev != null) {
              ans = Math.min(node.val-prev, ans);
         }
-       
         prev = node.val;
         helper(node.right);
     }
