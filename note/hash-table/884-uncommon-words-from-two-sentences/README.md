@@ -2,38 +2,43 @@
 
 ## Description
 
-We are given two sentences `A` and `B`.  (A _sentence_  is a string of space
-separated words.  Each _word_ consists only of lowercase letters.)
+We are given two sentences `A` and `B`.  (A _sentence_  is a string of space separated words.  Each _word_ consists only of lowercase letters.)
 
-A word is _uncommon_  if it appears exactly once in one of the sentences, and
-does not appear in the other sentence.
+A word is _uncommon_  if it appears exactly once in one of the sentences, and does not appear in the other sentence.
 
 Return a list of all uncommon words.
 
 You may return the list in any order.
 
-
-
 **Example 1:**
-            Input: A = "this apple is sweet", B = "this apple is sour"    Output: ["sweet","sour"]    
+
+```
+Input: A = "this apple is sweet", B = "this apple is sour"
+Output: ["sweet","sour"]
+```
 
 **Example 2:**
-            Input: A = "apple apple", B = "banana"    Output: ["banana"]    
 
-
+```
+Input: A = "apple apple", B = "banana"
+Output: ["banana"]
+```
 
 **Note:**
 
-  1. `0 <= A.length <= 200`
-  2. `0 <= B.length <= 200`
-  3. `A` and `B` both contain only spaces and lowercase letters.
-
+1. `0 <= A.length <= 200`
+2. `0 <= B.length <= 200`
+3. `A` and `B` both contain only spaces and lowercase letters.
 
 **Tags:** Hash Table
 
 **Difficulty:** Easy
 
 ## 思路
+
+不常见词，其实就是在所有 A 和 B 的词频总和中只有一次的单词，理解了这一点问题就迎刃而解了。
+
+用映射表把两个句子的词频累加在一起，找出映射表中词频为一的单词，添加到列表中。
 
 ``` java
 class Solution {

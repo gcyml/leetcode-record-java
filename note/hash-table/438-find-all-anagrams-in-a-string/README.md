@@ -2,26 +2,50 @@
 
 ## Description
 
-Given a string **s** and a **non-empty** string **p** , find all the start
-indices of **p** 's anagrams in **s**.
+Given a string **s** and a **non-empty** string **p** , find all the start indices of **p** 's anagrams in **s**.
 
-Strings consists of lowercase English letters only and the length of both
-strings **s** and **p** will not be larger than 20,100.
+Strings consists of lowercase English letters only and the length of both strings **s** and **p** will not be larger than 20,100.
 
 The order of output does not matter.
 
 **Example 1:**
-            Input:    s: "cbaebabacd" p: "abc"        Output:    [0, 6]        Explanation:    The substring with start index = 0 is "cba", which is an anagram of "abc".    The substring with start index = 6 is "bac", which is an anagram of "abc".    
+
+```
+Input:
+s: "cbaebabacd" p: "abc"
+
+Output:
+[0, 6]
+
+Explanation:
+The substring with start index = 0 is "cba", which is an anagram of "abc".
+The substring with start index = 6 is "bac", which is an anagram of "abc".
+```
 
 **Example 2:**
-            Input:    s: "abab" p: "ab"        Output:    [0, 1, 2]        Explanation:    The substring with start index = 0 is "ab", which is an anagram of "ab".    The substring with start index = 1 is "ba", which is an anagram of "ab".    The substring with start index = 2 is "ab", which is an anagram of "ab".    
 
+```
+Input:
+s: "abab" p: "ab"
+
+Output:
+[0, 1, 2]
+
+Explanation:
+The substring with start index = 0 is "ab", which is an anagram of "ab".
+The substring with start index = 1 is "ba", which is an anagram of "ab".
+The substring with start index = 2 is "ab", which is an anagram of "ab".
+```
 
 **Tags:** Hash Table
 
 **Difficulty:** Easy
 
 ## 思路
+
+这里是先记录了 p 的字符频数以后，然后遍历 s，把 s 分割出所有和 p 长度相同的字符串，然后判断是不是 p 的变位词。
+
+暴力破解不可取，通过是通过 了，运行时间四百多毫秒。。。
 
 ``` java
 class Solution {

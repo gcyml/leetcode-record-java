@@ -10,10 +10,14 @@ harmonious subsequence among all its possible
 [subsequences](https://en.wikipedia.org/wiki/Subsequence).
 
 **Example 1:**  
-            Input: [1,3,2,2,5,2,3,7]    Output: 5    Explanation: The longest harmonious subsequence is [3,2,2,2,3].    
+
+```
+Input: [1,3,2,2,5,2,3,7]
+Output: 5
+Explanation: The longest harmonious subsequence is [3,2,2,2,3].
+```
 
 **Note:** The length of the input array will not exceed 20,000.
-
 
 **Tags:** Hash Table
 
@@ -35,12 +39,10 @@ class Solution {
         }
         for(Map.Entry<Integer, Integer> entry : map.entrySet()){
             if(map.containsKey(entry.getKey()+1)) {
-                max = Math.max(max, entry.getValue() + map.get(entry.getKey()+1)); 
+                max = Math.max(max, entry.getValue() + map.get(entry.getKey()+1));
             }
-           
         }
         return max;
-        
     }
 }
 ```
