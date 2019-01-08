@@ -5,9 +5,7 @@
 We define a harmonious array is an array where the difference between its
 maximum value and its minimum value is **exactly** 1.
 
-Now, given an integer array, you need to find the length of its longest
-harmonious subsequence among all its possible
-[subsequences](https://en.wikipedia.org/wiki/Subsequence).
+Now, given an integer array, you need to find the length of its longest harmonious subsequence among all its possible [subsequences](https://en.wikipedia.org/wiki/Subsequence).
 
 **Example 1:**  
 
@@ -24,6 +22,8 @@ Explanation: The longest harmonious subsequence is [3,2,2,2,3].
 **Difficulty:** Easy
 
 ## 思路
+
+首先记录数组中所有值和频数，写入到映射表中，而后遍历数组，找出映射表中该值 n 和 n+1 的频数总和，找出最大和。  
 
 ``` java
 class Solution {

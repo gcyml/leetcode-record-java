@@ -31,6 +31,10 @@ Explanation: The perimeter is the 16 yellow stripes in the image below:
 
 ## 思路
 
+题意是算出岛屿的周长。题目和 [Surface Area of 3D Shapes][note-892] 类似。
+
+可以从图片看出，每个方块的有效边取决于四个方向周围有没有方块。这里没有去判断四个方向上是否存在方块，只用到了两个方向，因为有效边的影响是相互的。假设有一个方块 center，若上方存在一个方块 top，则 top 的底边和 center 的顶边都不属于有效边。我们假设有方块 n 个，只需要算出每个方块的顶部和右侧是否存在方块，每存在一个方块，就会在所有方块的边长总和中损失两条边。
+
 ``` java
 class Solution {
     public int islandPerimeter(int[][] grid) {
@@ -54,3 +58,4 @@ class Solution {
 ```
 
 [title]: https://leetcode.com/problems/island-perimeter
+[note-892]:  https://github.com/gcyml/leetcode-record-java/tree/master/note/math/892-surface-area-of-3d-shapes

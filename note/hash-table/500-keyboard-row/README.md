@@ -25,6 +25,10 @@ Output: [ "Alaska", "Dad"]
 
 ## 思路
 
+题意是找出所有可以使用在键盘同一行的字母打印出来的单词。
+
+这里是把所有的字母和对应和键盘行写入到映射表中。而后遍历所有单词，得到第一个字母的键盘行，若其他字母和第一个字母和键盘行均相同，则把单词添加到列表中。
+
 ``` java
 class Solution {
     public String[] findWords(String[] words) {

@@ -39,6 +39,8 @@ The sister has two different kinds of candies, the brother has only one kind of 
 
 ## 思路
 
+要使得妹妹分到的种类足够多，就是尽可能保证妹妹分到的糖果种类没有重复的。因此，统计糖果的种类数，这里用到了 HashSet 来统计。若种类数超过糖果总数的一半，由于平均一半的原则，也最多只能给一半的糖果。
+
 ``` java
 class Solution {
     public int distributeCandies(int[] candies) {

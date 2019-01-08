@@ -26,6 +26,8 @@ The two boomerangs are **[[1,0],[0,0],[2,0]]** and **[[1,0],[2,0],[0,0]]**
 
 ## 思路
 
+用的暴力破解，两层循环，把元素到其他元素的距离和频数写入到映射表中，若频数大于 1，则说明可以组成回旋镖。
+
 ``` java
 class Solution {
     public int numberOfBoomerangs(int[][] points) {

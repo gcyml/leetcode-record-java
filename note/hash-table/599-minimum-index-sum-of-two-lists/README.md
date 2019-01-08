@@ -5,9 +5,7 @@
 Suppose Andy and Doris want to choose a restaurant for dinner, and they both
 have a list of favorite restaurants represented by strings.
 
-You need to help them find out their **common interest** with the **least list
-index sum**. If there is a choice tie between answers, output all of them with
-no order requirement. You could assume there always exists an answer.
+You need to help them find out their **common interest** with the **least list index sum**. If there is a choice tie between answers, output all of them with no order requirement. You could assume there always exists an answer.
 
 **Example 1:**  
 
@@ -41,6 +39,8 @@ Explanation: The restaurant they both like and have the least index sum is "Shog
 **Difficulty:** Easy
 
 ## 思路
+
+遍历 list1 把对应名称和索引存入映射表中，而后再遍历 list2，若映射表中存在同名餐厅，则得到索引和，判断其是否为最小索引和，若等于最小索引和，则列表中追加该名称；若小于最小索引和，则清空列表，重新添加，更新最小索引和的值。
 
 ``` java
 class Solution {

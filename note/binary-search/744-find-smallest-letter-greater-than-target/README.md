@@ -2,22 +2,49 @@
 
 ## Description
 
-Given a list of sorted characters `letters` containing only lowercase letters,
-and given a target letter `target`, find the smallest element in the list that
-is larger than the given target.
+Given a list of sorted characters `letters` containing only lowercase letters, and given a target letter `target`, find the smallest element in the list that is larger than the given target.
 
-Letters also wrap around. For example, if the target is `target = 'z'` and
-`letters = ['a', 'b']`, the answer is `'a'`.
+Letters also wrap around. For example, if the target is `target = 'z'` and `letters = ['a', 'b']`, the answer is `'a'`.
 
 **Examples:**  
-            Input:    letters = ["c", "f", "j"]    target = "a"    Output: "c"        Input:    letters = ["c", "f", "j"]    target = "c"    Output: "f"        Input:    letters = ["c", "f", "j"]    target = "d"    Output: "f"        Input:    letters = ["c", "f", "j"]    target = "g"    Output: "j"        Input:    letters = ["c", "f", "j"]    target = "j"    Output: "c"        Input:    letters = ["c", "f", "j"]    target = "k"    Output: "c"    
+
+```
+Input:
+letters = ["c", "f", "j"]
+target = "a"
+Output: "c"
+
+Input:
+letters = ["c", "f", "j"]
+target = "c"
+Output: "f"
+
+Input:
+letters = ["c", "f", "j"]
+target = "d"
+Output: "f"
+
+Input:
+letters = ["c", "f", "j"]
+target = "g"
+Output: "j"
+
+Input:
+letters = ["c", "f", "j"]
+target = "j"
+Output: "c"
+
+Input:
+letters = ["c", "f", "j"]
+target = "k"
+Output: "c"
+```
 
 **Note:**  
 
-  1. `letters` has a length in range `[2, 10000]`.
-  2. `letters` consists of lowercase letters, and contains at least 2 unique letters.
-  3. `target` is a lowercase letter.
-
+1. `letters` has a length in range `[2, 10000]`.
+2. `letters` consists of lowercase letters, and contains at least 2 unique letters.
+3. `target` is a lowercase letter.
 
 **Tags:** Binary Search
 
@@ -25,9 +52,14 @@ Letters also wrap around. For example, if the target is `target = 'z'` and
 
 ## 思路
 
+由于数组是已排序的，只需要线性遍历，找到第一个比目标字母大的字母即可。若找不到比 target 大的字母，则从头开始，即返回数组中第一个元素。
+
 ``` java
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
+        if(letters[letters.length-1] < target) {
+            return letters[0];
+        }
         for(char c : letters) {
             if(c > target) {
                 return c;
