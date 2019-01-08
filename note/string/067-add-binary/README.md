@@ -27,7 +27,11 @@ Output:  "10101"
 
 ## 思路
 
-题意是对讲过二进制字符串做加法运算。解题思路就是两个字符串从低位开始按位相加，遍历到最大数高位结束，无法取出按 0 处理。同时记录进位 `add`，把两值和进位相加，若。。
+题意是对两个二进制字符串做加法运算。
+
+解题思路是先找出两个字符串的最高位，对两个字符串从低位开始按位相加，遍历到最高位结束，无法取出值的按 0 处理。
+
+遍历时，取出两个字符串对应位的值，加上进位值 `add` 得到 sum。sum 有四种结果：0、1、2、3。针对不同结果，做出处理。遍历完成后，还需要清空进位。
 
 ``` java
 class Solution {
@@ -40,19 +44,19 @@ class Solution {
         int lmax = Math.max(la, lb);
         int add = 0;
         for (int i = 0; i < lmax; i++) {
-            char ca = la>i?a.charAt(la-i-1):'0';
-            char cb = lb>i?b.charAt(lb-i-1):'0';
-            int sum = add+cb+ca-96;
-            if(sum%2==0) {
-                result = '0' +result;
-                add =sum/ 2;
+            char ca = la > i ? a.charAt(la-i-1) : '0';
+            char cb = lb > i ? b.charAt(lb-i-1) : '0';
+            int sum = add + cb + ca - 96;
+            if(sum % 2 == 0) {
+                result = '0' + result;
+                add = sum / 2;
             } else{
-                result = '1' +result;
-                add = sum>2?1:0;
+                result = '1' + result;
+                add = sum > 2 ? 1 : 0;
             }
         }
-        if(add==1) {
-            result = '1' +result;
+        if(add == 1) {
+            result = '1' + result;
         }
         return result;
     }

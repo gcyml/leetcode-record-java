@@ -28,7 +28,7 @@ The five points are show in the figure below. The red triangle is the largest.
 
 ## 思路
 
-题意是给出一个二位矩阵，返回矩阵中由三个点组成的面积最大的三角形。暴力破解大法好。
+题意是给出一个二位矩阵，返回矩阵中由三个点组成的面积最大的三角形。三层循环，暴力破解。
 
 ``` java
 class Solution {
