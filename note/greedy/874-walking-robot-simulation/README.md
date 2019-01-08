@@ -46,9 +46,16 @@ Explanation: robot will be stuck at (1, 4) before turning left and going to (1, 
 
 ## 思路
 
+这题的难点在有两点：
+
+第一个难点是，多次转向后，现在所处方向的判定。用 `[0, 1, 2, 3]` 代表 北、东、西、南四个方向。假设当前方向为正北， angle = 0。收到右转命令，则 angle = 1,有规律 `angle = (angle + 1) % 4`；收到左转命令， 则 angle = 3， 有规律 `angle = (angle - 1 + 4) % 4`， 这里 +4 是为了避免出现负数的情况。
+
+第二个难点是，前方有障碍物如何前进的问题。这里是通过每前进一步，都判断这个位置是否有障碍物，若没有障碍物，则更新欧氏距离。这里为了方便判断障碍物存在与否，把障碍物的 xy 坐标写到一个 32位的数中，存入 hashset，通过 contains 来判断存在与否。
+
 ``` java
 class Solution {
     public int robotSim(int[] commands, int[][] obstacles) {
+        // 北、东、南、西对应的 x 和 y 轴的位移
         int[][] dir = {{0,1},{1,0},{0,-1},{-1,0}};
         int angle = 0;
         int x = 0, y = 0;
@@ -62,12 +69,6 @@ class Solution {
         for(int command : commands) {
             if(command == -1) {
                 angle = (angle+1)%4;
-                switch(command) {
-                    case -1:
-                        break;
-                    case -2:
-                        break;
-                }
             } else if(command == -2) {
                 angle = (angle-1+4)%4;
             } else {
@@ -79,6 +80,8 @@ class Solution {
                         x = nx;
                         y = ny;
                         max = Math.max(max, x*x + y*y);
+                    } else {
+                        break;
                     }
                 }
             }
